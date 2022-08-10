@@ -4,12 +4,34 @@
     <meta charset="UTF_8" />
     <meta http_equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="indexStyles.css" />
     <title>DLK</title>
   </head>
   <body>
     <header class="header">
       <a href="/index.html">
-        <img src="./icons/logoDLK.svg" class="logo_image" alt="Logo of DLK" />
+        <svg
+          width="102"
+          height="52"
+          viewBox="0 0 102 52"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M0.997559 0H19.1259C32.1442 0 41.4377 12.3713 41.4377 24.0356V27.7332C41.4377 39.3974 32.1442 51.7689 19.1259 51.7689H0.997559V0ZM38.6487 24.0356C38.6487 13.5132 30.2391 2.77333 19.1259 2.77333H3.78653V48.9956H19.1259C30.2391 48.9956 38.6487 38.2557 38.6487 27.7333V24.0356Z"
+            fill="#1E0606"
+          />
+          <path
+            d="M47.4805 0H50.2694V49.2267H65.144V52H47.4805V0Z"
+            fill="#1E0606"
+          />
+          <path
+            d="M68.8626 0V51.7689H71.6516V27.3833L72.3362 26.7025L97.1676 51.7689H101.083L74.3083 24.7414L99.1893 0H95.2451L71.6516 23.4612V0H68.8626Z"
+            fill="#1E0606"
+          />
+        </svg>
       </a>
       <nav class="nav_menu">
         <ul class="nav_list">
@@ -72,17 +94,27 @@
         <ul class="category_list">
           <li class="category_list_item">
             <a href="#" class="category_item_link">
+              <img src="./images/apparelKids.jpg" alt="Apparel kids image" />
               <p>Apparel kids</p>
             </a>
           </li>
           <li class="category_list_item">
-            <a href="#" class="category_item_link"><p>Holiday shop</p></a>
+            <a href="#" class="category_item_link">
+              <img src="./images/holidayShop.jpg" alt="Holiday shop image" />
+              <p>Holiday shop</p></a
+            >
           </li>
           <li class="category_list_item">
-            <a href="#" class="category_item_link"><p>Toys</p></a>
+            <a href="#" class="category_item_link">
+              <img src="./images/toys.jpg" alt="Toys image" />
+              <p>Toys</p></a
+            >
           </li>
           <li class="category_list_item">
-            <a href="#" class="category_item_link"><p>Accessories</p></a>
+            <a href="#" class="category_item_link">
+              <img src="./images/accessories.jpg" alt="Accessories image" />
+              <p>Accessories</p></a
+            >
           </li>
         </ul>
         <div class="category_nav">
@@ -239,16 +271,26 @@
           <div class="social_lincs">
             <ul class="social_links_list">
               <li class="social_links_item">
-                <a href="#" class="social_link facebook">Facebook</a>
+                <a href="https://facebook.com" class="social_link facebook"
+                  >Facebook</a
+                >
               </li>
               <li class="social_links_item">
-                <a href="#" class="social_link twitter">Twitter</a>
+                <a href="https://twitter.com" class="social_link twitter"
+                  >Twitter</a
+                >
               </li>
               <li class="social_links_item">
-                <a href="#" class="social_link pinterest">Pinterest</a>
+                <a
+                  href="https://www.pinterest.com"
+                  class="social_link pinterest"
+                  >Pinterest</a
+                >
               </li>
               <li class="social_links_item">
-                <a href="#" class="social_link instagram">Instagram</a>
+                <a href="http://instagram.com" class="social_link instagram"
+                  >Instagram</a
+                >
               </li>
             </ul>
           </div>
@@ -257,23 +299,41 @@
       <div class="footer_additional_info">
         <div class="rating">
           <span class="rating_text">Company Rating</span>
-          <ul class="rating_list">
-            <li class="rating_list_item">
-              <img src="#" class="rating_star" alt="star" />
-            </li>
-            <li class="rating_list_item">
-              <img src="#" class="rating_star" alt="star" />
-            </li>
-            <li class="rating_list_item">
-              <img src="#" class="rating_star" alt="star" />
-            </li>
-            <li class="rating_list_item">
-              <img src="#" class="rating_star" alt="star" />
-            </li>
-            <li class="rating_list_item">
-              <img src="#" class="rating_star" alt="star" />
-            </li>
-          </ul>
+          <input
+            class="rating_star"
+            type="radio"
+            name="rating"
+            value="1"
+            aria-label="Очень плохо"
+          />
+          <input
+            class="rating_star"
+            type="radio"
+            name="rating"
+            value="1"
+            aria-label="Бывало и лучше"
+          />
+          <input
+            class="rating_star"
+            type="radio"
+            name="rating"
+            value="1"
+            aria-label="Сойдёт"
+          />
+          <input
+            class="rating_star"
+            type="radio"
+            name="rating"
+            value="1"
+            aria-label="Неплохо"
+          />
+          <input
+            class="rating_star"
+            type="radio"
+            name="rating"
+            value="1"
+            aria-label="Отлично"
+          />
         </div>
         <p>Copyright © 2018 Dlk • Design Life Kids</p>
         <a href="#" class="developer_link"

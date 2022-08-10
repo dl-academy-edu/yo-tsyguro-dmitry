@@ -1,0 +1,180 @@
+body {
+  font-family: Open-sans;
+}
+
+.header {
+  margin: 50px 110px 231px 110px;
+  display: flex;
+}
+
+.nav_menu {
+}
+.nav_list {
+  margin-left: 60px;
+  display: flex;
+  list-style: none;
+}
+.nav_list_item {
+  margin-right: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.nav_link {
+  text-decoration: none;
+  color: inherit;
+}
+.search_button {
+  margin-left: auto;
+}
+.contact_us_link {
+  margin-left: 20px;
+  align-self: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: inherit;
+}
+.main {
+}
+.banner {
+}
+.banner_changer {
+}
+.banner_number_container {
+}
+.banner_number {
+}
+.banner_change_buttons {
+}
+.banner_change_button_item {
+}
+.banner_change_button {
+}
+.banner_content_container {
+}
+.banner_title {
+}
+.button {
+}
+.explore_button {
+}
+.banner_footer {
+}
+.category_menu {
+}
+.category_menu_title {
+}
+.category_list {
+}
+.category_list_item {
+}
+.category_item_link {
+}
+.category_nav {
+}
+.category_nav_button {
+}
+.text {
+}
+.category_nav_commentary {
+}
+.service {
+}
+.service_picture {
+}
+.service_info {
+}
+.service_title {
+}
+.service_list {
+}
+.service_list_item {
+}
+.service_button {
+}
+.service_info_text {
+}
+.learn_more_button {
+}
+.partners {
+}
+.parters_title {
+}
+.partners_list {
+}
+.partners_list_item {
+}
+.additional_services {
+}
+.additional_service {
+}
+.additional_service_title {
+}
+.additional_service_text {
+}
+.buy_now_button {
+}
+.contacts {
+}
+.contacts_title {
+}
+.contacts_text {
+}
+.footer {
+}
+.footer_menu {
+}
+.footer_navigation {
+}
+.footer_navigation_title {
+}
+.footer_navigation_list {
+}
+.footer_navigation_list_item {
+}
+.footer_menu_link {
+}
+.footer_custumer_info {
+}
+.footer_custumer_info_title {
+}
+.footer_custumer_info_list {
+}
+.footer_custumer_info_list_item {
+}
+.footer_connect {
+}
+.footer_connect_title {
+}
+.footer_subscribe {
+}
+.subscribe_email {
+}
+.subscribe_button {
+}
+.social_lincs {
+}
+.social_links_list {
+}
+.social_links_item {
+}
+.social_link {
+}
+.facebook {
+}
+.twitter {
+}
+.pinterest {
+}
+.instagram {
+}
+.footer_additional_info {
+}
+.rating {
+}
+.rating_text {
+}
+.rating_star {
+}
+.developer_link {
+}
