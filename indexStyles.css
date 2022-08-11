@@ -1,10 +1,11 @@
 body {
   font-family: Open-sans;
+  padding: 50px 110px 100px 110px;
 }
 
 .header {
-  margin: 50px 110px 231px 110px;
   display: flex;
+  align-items: center;
 }
 
 .nav_menu {
@@ -13,6 +14,7 @@ body {
   margin-left: 60px;
   display: flex;
   list-style: none;
+  min-width: 240px;
 }
 .nav_list_item {
   margin-right: 20px;
@@ -28,7 +30,7 @@ body {
 }
 .contact_us_link {
   margin-left: 20px;
-  align-self: center;
+  min-width: 105px;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
@@ -37,22 +39,70 @@ body {
 .main {
 }
 .banner {
+  margin-top: 231px;
 }
+
+.banner_container {
+  display: flex;
+  background-color: #eee4db;
+  padding: 17px 28px;
+  position: relative;
+}
+
+.banner_container::after {
+  content: "";
+  width: 52%;
+  height: 135%;
+  right: 72px;
+  bottom: -30px;
+
+  background-image: url("./images/bannerMonster.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+}
+
 .banner_changer {
 }
 .banner_number_container {
 }
 .banner_number {
+  font-family: Montserrat;
+  font-size: 60px;
+  font-weight: 200;
+  opacity: 5%;
 }
 .banner_change_buttons {
+  list-style: none;
+  padding-left: 0;
 }
 .banner_change_button_item {
 }
 .banner_change_button {
+  background-color: #d6cac2;
+  height: 3px;
+  width: 31px;
+  display: block;
+  border-width: 0;
+  margin-top: 12px;
+  margin-right: auto;
+  margin-bottom: 11px;
 }
+
 .banner_content_container {
+  margin-left: 44px;
+  margin-top: 72px;
+  margin-bottom: 72px;
+  width: 45%;
 }
+
 .banner_title {
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
 }
 .button {
 }
