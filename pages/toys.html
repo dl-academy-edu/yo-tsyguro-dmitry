@@ -62,29 +62,66 @@
     </header>
     <main>
       <h1>Toy for kids</h1>
-      <div>хлебные крошки</div>
+      <ul class="breadcrump">
+        <li class="breadcrump-item">
+          <a href="../index.html">Home</a>
+        </li>
+        <li class="breadcrump-item">
+          <a href="./catalog.html">Catalog</a>
+        </li>
+      </ul>
       <section class="product_filter">
-        <div class="cost_slider">
-          <h2 class="cost_title">Cost</h2>
-          <div>slider</div>
-        </div>
-        <div class="color_selection">
-          <!__ <ul class="color_selection_list">
+        <fieldset class="slider_values">
+          <legend class="filter_title">Cost</legend>
+          <input
+            type="range"
+            id="start"
+            name="Cost"
+            min="0"
+            max="500"
+            value="100"
+          />
+          <span>0</span>
+          <span>500</span>
+        </fieldset>
+        <fieldset class="color_selection">
+          <legend class="filter_title">Color</legend>
+          <ul class="color_selection_list">
             <li class="color_selection_list_item">
-              
+              <input type="checkbox" id="checkbox-black" class="checkbox" />
+              <label for="checkbox-black">Black</label>
             </li>
-          </ul> __>
-          <label class="checkbox_group">
-            <input type="checkbox" />
-            <span class="checkbox_text">Black</span>
-            <input type="checkbox" />
-            <span class="checkbox_text">Blue</span>
-            <input type="checkbox" />
-            <span class="checkbox_text">Green</span>
-            <input type="checkbox" />
-            <span class="checkbox_text">Whute</span>
-          </label>
-        </div>
+            <li class="color_selection_list_item">
+              <input type="checkbox" id="checkbox-blue" class="checkbox" />
+              <label for="checkbox-blue">Blue</label>
+            </li>
+            <li class="color_selection_list_item">
+              <input type="checkbox" id="checkbox-green" class="checkbox" />
+              <label for="checkbox-green">Green</label>
+            </li>
+            <li class="color_selection_list_item">
+              <input type="checkbox" id="checkbox-white" class="checkbox" />
+              <label for="checkbox-white">White</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="delivery_selection">
+          <legend class="filter_title">Delivery</legend>
+          <ul class="radio_group_list">
+            <li class="radio_group_list_item">
+              <label>
+                <input name="shipping" type="radio" value="Free shipping" />
+                Free shipping
+              </label>
+            </li>
+            <li>
+              <label>
+                <input name="shipping" type="radio" value="Fast shipping" />
+                Fast shipping
+              </label>
+            </li>
+          </ul>
+        </fieldset>
       </section>
     </main>
     <footer class="footer">
