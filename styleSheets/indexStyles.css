@@ -37,9 +37,9 @@ body {
   color: inherit;
 }
 .main {
+  padding-top: 231px;
 }
 .banner {
-  margin-top: 231px;
 }
 
 .banner_container {
@@ -56,7 +56,7 @@ body {
   right: 72px;
   bottom: -30px;
 
-  background-image: url("./images/bannerMonster.png");
+  background-image: url("../static/images/bannerMonster.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
