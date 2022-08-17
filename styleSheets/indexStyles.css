@@ -1,3 +1,13 @@
+font-face {
+  font-family: Montserrat-bold;
+  src: url("/fonts/Montserrat/static/Montserrat-Bold.ttf");
+}
+
+font-face {
+  font-family: Montserrat-extra-light;
+  src: url("/fonts/Montserrat/static/Montserrat-ExtraLight.ttf");
+}
+
 body {
   font-family: Open-sans;
   padding: 50px 110px 100px 110px;
@@ -8,20 +18,20 @@ body {
   align-items: center;
 }
 
-.nav_menu {
+.nav {
 }
-.nav_list {
+.nav__list {
   margin-left: 60px;
   display: flex;
   list-style: none;
   min-width: 240px;
 }
-.nav_list_item {
+.nav__list_item {
   margin-right: 20px;
   font-size: 14px;
   text-transform: uppercase;
 }
-.nav_link {
+.nav__link {
   text-decoration: none;
   color: inherit;
 }
@@ -42,14 +52,14 @@ body {
 .banner {
 }
 
-.banner_container {
+.banner__container {
   display: flex;
   background-color: #eee4db;
   padding: 17px 28px;
   position: relative;
 }
 
-.banner_container::after {
+.banner__container::after {
   content: "";
   width: 52%;
   height: 135%;
@@ -63,23 +73,22 @@ body {
   position: absolute;
 }
 
-.banner_changer {
+.banner__changer {
 }
-.banner_number_container {
+.banner__number_container {
 }
-.banner_number {
-  font-family: Montserrat;
+.banner__number {
+  font-family: Montserrat-extra-light;
   font-size: 60px;
-  font-weight: 200;
   opacity: 5%;
 }
-.banner_change_buttons {
+.banner__change_buttons {
   list-style: none;
   padding-left: 0;
 }
-.banner_change_button_item {
+.banner__change_button_item {
 }
-.banner_change_button {
+.banner__change_button {
   background-color: #d6cac2;
   height: 3px;
   width: 31px;
@@ -90,17 +99,16 @@ body {
   margin-bottom: 11px;
 }
 
-.banner_content_container {
+.banner__content_container {
   margin-left: 44px;
   margin-top: 72px;
   margin-bottom: 72px;
   width: 45%;
 }
 
-.banner_title {
-  font-family: Montserrat;
+.banner__title {
+  font-family: Montserrat-bold;
   font-size: 40px;
-  font-weight: 700;
   text-transform: uppercase;
   margin: 0;
 }
@@ -108,95 +116,95 @@ body {
 }
 .explore_button {
 }
-.banner_footer {
+.banner__footer {
 }
-.category_menu {
+.category {
 }
-.category_menu_title {
+.category__title {
 }
-.category_list {
+.category__list {
 }
-.category_list_item {
+.category__list_item {
 }
-.category_item_link {
+.category__item_link {
 }
-.category_nav {
+.category__nav {
 }
-.category_nav_button {
+.category__nav_button {
 }
 .text {
 }
-.category_nav_commentary {
+.category__nav_commentary {
 }
 .service {
 }
-.service_picture {
+.service__picture {
 }
-.service_info {
+.service__info {
 }
-.service_title {
+.service__title {
 }
-.service_list {
+.service__list {
 }
-.service_list_item {
+.service__list_item {
 }
-.service_button {
+.service__button {
 }
-.service_info_text {
+.service__info_text {
 }
 .learn_more_button {
 }
 .partners {
 }
-.parters_title {
+.parters__title {
 }
-.partners_list {
+.partners__list {
 }
-.partners_list_item {
+.partners__list_item {
 }
 .additional_services {
 }
 .additional_service {
 }
-.additional_service_title {
+.additional_service__title {
 }
-.additional_service_text {
+.additional_service__text {
 }
 .buy_now_button {
 }
 .contacts {
 }
-.contacts_title {
+.contacts__title {
 }
-.contacts_text {
+.contacts__text {
 }
 .footer {
 }
-.footer_menu {
+.footer__menu {
 }
-.footer_navigation {
+.footer__navigation {
 }
-.footer_navigation_title {
+.footer__navigation_title {
 }
-.footer_navigation_list {
+.footer__navigation_list {
 }
-.footer_navigation_list_item {
+.footer__navigation_list_item {
 }
-.footer_menu_link {
+.footer__menu_link {
 }
-.footer_custumer_info {
+.footer__custumer_info {
 }
-.footer_custumer_info_title {
+.footer__custumer_info_title {
 }
-.footer_custumer_info_list {
+.footer__custumer_info_list {
 }
-.footer_custumer_info_list_item {
+.footer__custumer_info_list_item {
 }
-.footer_connect {
+.footer__connect {
 }
-.footer_connect_title {
+.footer__connect_title {
 }
-.footer_subscribe {
+.footer__subscribe {
 }
 .subscribe_email {
 }
@@ -218,7 +226,7 @@ body {
 }
 .instagram {
 }
-.footer_additional_info {
+.footer__additional_info {
 }
 .rating {
 }

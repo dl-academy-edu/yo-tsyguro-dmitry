@@ -4,7 +4,7 @@
     <meta charset="UTF_8" />
     <meta http_equiv="X_UA_Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device_width, initial_scale=1.0" />
-    <title>DLK Toys</title>
+    <title>DLK Blog</title>
   </head>
   <body>
     <header class="header">
@@ -61,133 +61,111 @@
       <a href="./pages/contactUs.html" class="contact_us_link">Contact us</a>
     </header>
     <main class="main">
-      <h1 class="main__title">Toy for kids</h1>
+      <h1 class="main__title">Blog</h1>
       <ul class="breadcrump">
         <li class="breadcrump_item">
           <a href="../index.html">Home</a>
         </li>
         <li class="breadcrump_item">
-          <a href="./catalog.html">Catalog</a>
-        </li>
-        <li class="breadcrump_item">
-          <a href="./toys.html">Toys</a>
+          <a href="./blog.html">Blog</a>
         </li>
       </ul>
-      <section class="product_filter">
-        <fieldset class="slider_values">
-          <legend class="filter_title">Cost</legend>
-          <input
-            type="range"
-            id="start"
-            name="Cost"
-            min="0"
-            max="500"
-            value="100"
-          />
-          <span>0</span>
-          <span>500</span>
-        </fieldset>
-        <fieldset class="color_selection">
-          <legend class="filter_title">Color</legend>
-          <ul class="color_selection__list">
-            <li class="color_selection__list_item">
-              <input type="checkbox" id="checkbox-black" class="checkbox" />
-              <label for="checkbox-black">Black</label>
-            </li>
-            <li class="color_selection__list_item">
-              <input type="checkbox" id="checkbox-blue" class="checkbox" />
-              <label for="checkbox-blue">Blue</label>
-            </li>
-            <li class="color_selection__list_item">
-              <input type="checkbox" id="checkbox-green" class="checkbox" />
-              <label for="checkbox-green">Green</label>
-            </li>
-            <li class="color_selection__list_item">
-              <input type="checkbox" id="checkbox-white" class="checkbox" />
-              <label for="checkbox-white">White</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="delivery_selection">
-          <legend class="filter_title">Delivery</legend>
-          <ul class="radio_group_list">
-            <li class="radio_group_list_item">
-              <label>
-                <input name="shipping" type="radio" value="Free shipping" />
-                Free shipping
-              </label>
-            </li>
-            <li>
-              <label>
-                <input name="shipping" type="radio" value="Fast shipping" />
-                Fast shipping
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset class="amount_selection">
-          <legend class="amount_title">Amount</legend>
-          <ul class="amount_selection__list">
-            <li class="amount_selection__list_item">
-              <input type="checkbox" id="checkbox-0-5" class="checkbox" />
-              <label for="checkbox-0-5">0-5</label>
-            </li>
-            <li class="amount_selection__list_item">
-              <input type="checkbox" id="checkbox-10-20" class="checkbox" />
-              <label for="checkbox-10-20">10-20</label>
-            </li>
-            <li class="amount_selection__list_item">
-              <input type="checkbox" id="checkbox-20-50" class="checkbox" />
-              <label for="checkbox-20-50">20-50</label>
-            </li>
-          </ul>
-        </fieldset>
-        <button class="button product_filter_button" type="submit">
-          Apply
-        </button>
-      </section>
-      <section class="toys_catalog">
-        <ul class="toys_catalog__list">
-          <li class="toys_catalog__list_item">
-            <article class="product">
-              <img src="../static/images/sharkBag.png" alt="sharky img" />
-              <h2 class="product_title">SHARKY BEAN BAG CHAIR COVER</h2>
-              <span class="product_price">$60.00 USD</span>
+      <section class="articles">
+        <ul class="articles__list">
+          <li class="articles__list_item">
+            <article class="article_item">
+              <img src="../static/images/legoMess.jpg" alt="lego img" />
+              <span class="article_date">23rd August 2018</span>
+              <h2 class="article_title">
+                Top 5 fastest growing it service companies in philly
+              </h2>
+              <p>
+                Direct Line Development’s Team is excited to announce that we
+                received UpCity’s 2019 Local Excellence Award! This prestigious
+                award is annually presented to the Top 1% of service providers
+                in the given marketplace.
+              </p>
             </article>
           </li>
-          <li class="toys_catalog__list_item">
-            <article class="product">
-              <img src="../static/images/brass.png" alt="sharky img" />
-              <h2 class="product_title">BRASS DECO FRAMES</h2>
-              <span class="product_price">$66.00 USD</span>
+          <li class="articles__list_item">
+            <article class="article_item">
+              <img
+                src="../static/images/animalsToys.jpg"
+                alt="animals toys img"
+              />
+              <span class="article_date">23rd August 2018</span>
+              <h2 class="article_title">Best financial</h2>
+              <p>
+                Direct Line Development is honored to be recognized as one of
+                the Top 100 Fastest Growing Companies 2019 in Philadelphia,
+                according to Growjo’s ranking.
+              </p>
             </article>
           </li>
-          <li class="toys_catalog__list_item">
-            <article class="product">
-              <img src="../static/images/cibo.png" alt="sharky img" />
-              <h2 class="product_title">CIBO FULL APRON</h2>
-              <span class="product_price">$60.00 USD</span>
+          <li class="articles__list_item">
+            <article class="article_item">
+              <img
+                src="../static/images/organizedToys.jpg"
+                alt="organized toys img"
+              />
+              <span class="article_date">23rd August 2018</span>
+              <h2 class="article_title">
+                Company logo or brand identity: which one is more important?
+                brand identity
+              </h2>
+              <p>
+                To survive in the world of digital marketing, you need to keep
+                up with the latest SEO trends. Here are our simple, but
+                effective, SEO tips for small business success.
+              </p>
             </article>
           </li>
-          <li class="toys_catalog__list_item">
-            <article class="product">
-              <img src="../static/images/gatcha.png alt="sharky img">
-              <h2 class="product_title">GATCHA GATCHA GUMBALL MACHINE</h2>
-              <span class="product_price">$56.00 USD</span>
+          <li class="articles__list_item">
+            <article class="article_item">
+              <img
+                src="../static/images/buzLighter.jpg"
+                alt="Buz-lighter img"
+              />
+              <span class="article_date">23rd August 2018</span>
+              <h2 class="article_title">Best financial</h2>
+              <p>
+                Direct Line Development is honored to be recognized as one of
+                the Top 100 Fastest Growing Companies 2019 in Philadelphia,
+                according to Growjo’s ranking.
+              </p>
             </article>
           </li>
-          <li class="toys_catalog__list_item">
-            <article class="product">
-              <img src="../static/images/candle.png" alt="sharky img" />
-              <h2 class="product_title">CHRISTMAS ADVENT SCENTED CANDLE</h2>
-              <span class="product_price">$29.00 USD</span>
+          <li class="articles__list_item">
+            <article class="article_item">
+              <img
+                src="../static/images/princessToy.jpg"
+                alt="princess toy img"
+              />
+              <span class="article_date">23rd August 2018</span>
+              <h2 class="article_title">
+                Company logo or brand identity: which one is more important?
+                brand identity
+              </h2>
+              <p>
+                To survive in the world of digital marketing, you need to keep
+                up with the latest SEO trends. Here are our simple, but
+                effective, SEO tips for small business success.
+              </p>
             </article>
           </li>
-          <li class="toys_catalog__list_item">
-            <article class="product">
-              <img src="../static/images/tangle.png" alt="sharky img" />
-              <h2 class="product_title">TANGLE SPINNING TEA LIGHT</h2>
-              <span class="product_price">$56.00 USD</span>
+          <li class="articles__list_item">
+            <article class="article_item">
+              <img src="../static/images/dice.jpg" alt="dice img" />
+              <span class="article_date">23rd August 2018</span>
+              <h2 class="article_title">
+                Top 5 fastest growing it service companies in philly
+              </h2>
+              <p>
+                Direct Line Development’s Team is excited to announce that we
+                received UpCity’s 2019 Local Excellence Award! This prestigious
+                award is annually presented to the Top 1% of service providers
+                in the given marketplace.
+              </p>
             </article>
           </li>
         </ul>
