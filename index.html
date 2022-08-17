@@ -5,6 +5,13 @@
     <meta http_equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styleSheets/indexStyles.css" />
+    <link rel="stylesheet" href="./styleSheets/common.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>DLK</title>
   </head>
   <body>
@@ -85,7 +92,7 @@
           </div>
           <div class="banner__content_container">
             <h1 class="banner__title">The ooh noo collection</h1>
-            <p>Designed in Slovenia</p>
+            <p class="banner__design_info">Designed in Slovenia</p>
             <a href="#" class="button explore_button">Explore now</a>
           </div>
         </div>
@@ -104,23 +111,30 @@
                 src="./static/images/apparelKids.jpg"
                 alt="Apparel kids image"
               />
-              <p>Apparel kids</p>
+              <div class="category__name">
+                <p>Apparel kids</p>
+              </div>
             </a>
           </li>
+
           <li class="category__list_item">
             <a href="#" class="category__item_link">
               <img
                 src="./static/images/holidayShop.jpg"
                 alt="Holiday shop image"
               />
-              <p>Holiday shop</p></a
-            >
+              <div class="category__name">
+                <p>Holiday shop</p>
+              </div>
+            </a>
           </li>
           <li class="category__list_item">
             <a href="#" class="category__item_link">
               <img src="./static/images/toys.jpg" alt="Toys image" />
-              <p>Toys</p></a
-            >
+              <div class="category__name">
+                <p>Toys</p>
+              </div>
+            </a>
           </li>
           <li class="category__list_item">
             <a href="#" class="category__item_link">
@@ -128,7 +142,9 @@
                 src="./static/images/accessories.jpg"
                 alt="Accessories image"
               />
-              <p>Accessories</p></a
+              <div class="category__name">
+                <p>Accessories</p>
+              </div></a
             >
           </li>
         </ul>
@@ -394,7 +410,8 @@
             id="message-field"
             cols="30"
             rows="10"
-          ></textarea>
+          >
+          </textarea>
         </div>
         <div class="checkbox_container">
           <input type="checkbox" id="checkbox-field" class="checkbox" />
