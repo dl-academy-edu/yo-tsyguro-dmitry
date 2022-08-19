@@ -4,6 +4,7 @@
     <meta charset="UTF_8" />
     <meta http_equiv="X_UA_Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device_width, initial_scale=1.0" />
+    <link rel="stylesheet" href="../styleSheets/common.css" />
     <title>DLK Toys</title>
   </head>
   <body>
@@ -32,16 +33,16 @@
           />
         </svg>
       </a>
-      <nav class="nav_menu">
-        <ul class="nav_list">
-          <li class="nav_list_item">
-            <a href="#" class="nav_link">Blog</a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__list_item">
+            <a href="./blog.html" class="nav__link">Blog</a>
           </li>
-          <li class="nav_list_item">
-            <a href="#" class="nav_link">Catalog</a>
+          <li class="nav__list_item">
+            <a href="./catalog.html" class="nav__link">Catalog</a>
           </li>
-          <li class="nav_list_item">
-            <a href="#" class="nav_link">About us</a>
+          <li class="nav__list_item">
+            <a href="#" class="nav__link">About us</a>
           </li>
         </ul>
       </nav>
@@ -58,16 +59,19 @@
         />
       </svg>
 
-      <a href="./pages/contactUs.html" class="contact_us_link">Contact us</a>
+      <a href="../pages/contactUs.html" class="contact_us_link">Contact us</a>
     </header>
-    <main>
-      <h1>Toy for kids</h1>
+    <main class="main">
+      <h1 class="main__title">Toy for kids</h1>
       <ul class="breadcrump">
-        <li class="breadcrump-item">
+        <li class="breadcrump_item">
           <a href="../index.html">Home</a>
         </li>
-        <li class="breadcrump-item">
+        <li class="breadcrump_item">
           <a href="./catalog.html">Catalog</a>
+        </li>
+        <li class="breadcrump_item">
+          <a href="./toys.html">Toys</a>
         </li>
       </ul>
       <section class="product_filter">
@@ -86,20 +90,20 @@
         </fieldset>
         <fieldset class="color_selection">
           <legend class="filter_title">Color</legend>
-          <ul class="color_selection_list">
-            <li class="color_selection_list_item">
+          <ul class="color_selection__list">
+            <li class="color_selection__list_item">
               <input type="checkbox" id="checkbox-black" class="checkbox" />
               <label for="checkbox-black">Black</label>
             </li>
-            <li class="color_selection_list_item">
+            <li class="color_selection__list_item">
               <input type="checkbox" id="checkbox-blue" class="checkbox" />
               <label for="checkbox-blue">Blue</label>
             </li>
-            <li class="color_selection_list_item">
+            <li class="color_selection__list_item">
               <input type="checkbox" id="checkbox-green" class="checkbox" />
               <label for="checkbox-green">Green</label>
             </li>
-            <li class="color_selection_list_item">
+            <li class="color_selection__list_item">
               <input type="checkbox" id="checkbox-white" class="checkbox" />
               <label for="checkbox-white">White</label>
             </li>
@@ -122,59 +126,131 @@
             </li>
           </ul>
         </fieldset>
+        <fieldset class="amount_selection">
+          <legend class="amount_title">Amount</legend>
+          <ul class="amount_selection__list">
+            <li class="amount_selection__list_item">
+              <input type="checkbox" id="checkbox-0-5" class="checkbox" />
+              <label for="checkbox-0-5">0-5</label>
+            </li>
+            <li class="amount_selection__list_item">
+              <input type="checkbox" id="checkbox-10-20" class="checkbox" />
+              <label for="checkbox-10-20">10-20</label>
+            </li>
+            <li class="amount_selection__list_item">
+              <input type="checkbox" id="checkbox-20-50" class="checkbox" />
+              <label for="checkbox-20-50">20-50</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button product_filter_button" type="submit">
+          Apply
+        </button>
+      </section>
+      <section class="toys_catalog">
+        <ul class="toys_catalog__list">
+          <li class="toys_catalog__list_item">
+            <article class="product">
+              <img src="../static/images/sharkBag.png" alt="sharky img" />
+              <h2 class="product_title">SHARKY BEAN BAG CHAIR COVER</h2>
+              <span class="product_price">$60.00 USD</span>
+            </article>
+          </li>
+          <li class="toys_catalog__list_item">
+            <article class="product">
+              <img src="../static/images/brass.png" alt="sharky img" />
+              <h2 class="product_title">BRASS DECO FRAMES</h2>
+              <span class="product_price">$66.00 USD</span>
+            </article>
+          </li>
+          <li class="toys_catalog__list_item">
+            <article class="product">
+              <img src="../static/images/cibo.png" alt="sharky img" />
+              <h2 class="product_title">CIBO FULL APRON</h2>
+              <span class="product_price">$60.00 USD</span>
+            </article>
+          </li>
+          <li class="toys_catalog__list_item">
+            <article class="product">
+              <img src="../static/images/gatcha.png alt="sharky img">
+              <h2 class="product_title">GATCHA GATCHA GUMBALL MACHINE</h2>
+              <span class="product_price">$56.00 USD</span>
+            </article>
+          </li>
+          <li class="toys_catalog__list_item">
+            <article class="product">
+              <img src="../static/images/candle.png" alt="sharky img" />
+              <h2 class="product_title">CHRISTMAS ADVENT SCENTED CANDLE</h2>
+              <span class="product_price">$29.00 USD</span>
+            </article>
+          </li>
+          <li class="toys_catalog__list_item">
+            <article class="product">
+              <img src="../static/images/tangle.png" alt="sharky img" />
+              <h2 class="product_title">TANGLE SPINNING TEA LIGHT</h2>
+              <span class="product_price">$56.00 USD</span>
+            </article>
+          </li>
+        </ul>
+        <div class="product_page">
+          <button class="page_number" type="button">1</button>
+          <button class="page_number" type="button">2</button>
+          <button class="page_number" type="button">3</button>
+          <button class="page_number" type="button">4</button>
+        </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="footer_menu">
-        <div class="footer_navigation">
-          <h2 class="footer_navigation_title">Navigation</h2>
-          <ul class="footer_navigation_list">
-            <li class="footer_navigation_list_item">
-              <a href="#" class="footer_menu_link">About us</a>
+      <div class="footer__menu">
+        <div class="footer__navigation">
+          <h2 class="footer__navigation_title">Navigation</h2>
+          <ul class="footer__navigation_list">
+            <li class="footer__navigation_list_item">
+              <a href="#" class="footer__menu_link">About us</a>
             </li>
-            <li class="footer_navigation_list_item">
-              <a href="#" class="footer_menu_link">Blog</a>
+            <li class="footer__navigation_list_item">
+              <a href="#" class="footer__menu_link">Blog</a>
             </li>
-            <li class="footer_navigation_list_item">
-              <a href="#" class="footer_menu_link">Design Services</a>
+            <li class="footer__navigation_list_item">
+              <a href="#" class="footer__menu_link">Design Services</a>
             </li>
-            <li class="footer_navigation_list_item">
-              <a href="#" class="footer_menu_link">Featured On</a>
+            <li class="footer__navigation_list_item">
+              <a href="#" class="footer__menu_link">Featured On</a>
             </li>
-            <li class="footer_navigation_list_item">
-              <a href="#" class="footer_menu_link">2018 Holiday Catalog</a>
+            <li class="footer__navigation_list_item">
+              <a href="#" class="footer__menu_link">2018 Holiday Catalog</a>
             </li>
-            <li class="footer_navigation_list_item">
-              <a href="#" class="footer_menu_link">Shop By Designer</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer_custumer_info">
-          <h2 class="footer_custumer_info_title">Custumer Information</h2>
-          <ul class="footer_custumer_info_list">
-            <li class="footer_custumer_info_list_item">
-              <a href="#" class="footer_menu_link">Contact Us</a>
-            </li>
-            <li class="footer_custumer_info_list_item">
-              <a href="#" class="footer_menu_link">Sale Exclusions</a>
-            </li>
-            <li class="footer_custumer_info_list_item">
-              <a href="#" class="footer_menu_link">Shippings & Returns</a>
-            </li>
-            <li class="footer_custumer_info_list_item">
-              <a href="#" class="footer_menu_link">Terms & Conditions</a>
-            </li>
-            <li class="footer_custumer_info_list_item">
-              <a href="#" class="footer_menu_link">Privacy Policy</a>
-            </li>
-            <li class="footer_custumer_info_list_item">
-              <a href="#" class="footer_menu_link">Search</a>
+            <li class="footer__navigation_list_item">
+              <a href="#" class="footer__menu_link">Shop By Designer</a>
             </li>
           </ul>
         </div>
-        <div class="footer_connect">
-          <h2 class="footer_connect_title">Connect</h2>
-          <form class="footer_subscribe">
+        <div class="footer__custumer_info">
+          <h2 class="footer__custumer_info_title">Custumer Information</h2>
+          <ul class="footer__custumer_info_list">
+            <li class="footer__custumer_info_list_item">
+              <a href="#" class="footer__menu_link">Contact Us</a>
+            </li>
+            <li class="footer__custumer_info_list_item">
+              <a href="#" class="footer__menu_link">Sale Exclusions</a>
+            </li>
+            <li class="footer__custumer_info_list_item">
+              <a href="#" class="footer__menu_link">Shippings & Returns</a>
+            </li>
+            <li class="footer__custumer_info_list_item">
+              <a href="#" class="footer__menu_link">Terms & Conditions</a>
+            </li>
+            <li class="footer__custumer_info_list_item">
+              <a href="#" class="footer__menu_link">Privacy Policy</a>
+            </li>
+            <li class="footer__custumer_info_list_item">
+              <a href="#" class="footer__menu_link">Search</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__connect">
+          <h2 class="footer__connect_title">Connect</h2>
+          <form class="footer__subscribe">
             <input
               type="email"
               class="subscribe_email"
@@ -201,24 +277,24 @@
           </div>
         </div>
       </div>
-      <div class="footer_additional_info">
+      <div class="footer__additional_info">
         <div class="rating">
-          <span class="rating_text">Company Rating</span>
-          <ul class="rating_list">
-            <li class="rating_list_item">
-              <img src="#" class="rating_star" alt="star" />
+          <span class="rating__text">Company Rating</span>
+          <ul class="rating__list">
+            <li class="rating__list_item">
+              <img src="#" class="rating__star" alt="star" />
             </li>
-            <li class="rating_list_item">
-              <img src="#" class="rating_star" alt="star" />
+            <li class="rating__list_item">
+              <img src="#" class="rating__star" alt="star" />
             </li>
-            <li class="rating_list_item">
-              <img src="#" class="rating_star" alt="star" />
+            <li class="rating__list_item">
+              <img src="#" class="rating__star" alt="star" />
             </li>
-            <li class="rating_list_item">
-              <img src="#" class="rating_star" alt="star" />
+            <li class="rating__list_item">
+              <img src="#" class="rating__star" alt="star" />
             </li>
-            <li class="rating_list_item">
-              <img src="#" class="rating_star" alt="star" />
+            <li class="rating__list_item">
+              <img src="#" class="rating__star" alt="star" />
             </li>
           </ul>
         </div>
