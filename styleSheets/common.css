@@ -4,6 +4,10 @@ body {
 }
 
 /* Стилизация повторяющихся элементов*/
+* {
+  list-style-type: none;
+  text-decoration: none;
+}
 
 p {
   margin: 0;
@@ -26,9 +30,14 @@ a {
 }
 
 ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.title_main {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
 }
 
 /* Стилизация header*/
@@ -42,7 +51,6 @@ ul {
 .nav__list {
   margin-left: 60px;
   display: flex;
-  list-style: none;
   min-width: 240px;
 }
 .nav__list_item {
@@ -51,7 +59,6 @@ ul {
   text-transform: uppercase;
 }
 .nav__link {
-  text-decoration: none;
   color: inherit;
 }
 .search_button {

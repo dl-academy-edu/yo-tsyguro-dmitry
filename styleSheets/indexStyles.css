@@ -36,7 +36,6 @@
   opacity: 5%;
 }
 .banner__change_buttons {
-  list-style: none;
   padding-left: 0;
 }
 .banner__change_button_item {
@@ -57,10 +56,10 @@
   margin-top: 72px;
   margin-bottom: 72px;
   width: 45%;
+  z-index: 1;
 }
 
 .banner__title {
-  font-family: "Montserrat", sans-serif;
   font-size: 40px;
   text-transform: uppercase;
   line-height: 110%;
@@ -98,9 +97,6 @@
   margin-top: 90px;
 }
 .category__title {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
   font-size: 38px;
   line-height: 46px;
   text-transform: uppercase;
@@ -140,17 +136,18 @@
   justify-content: center;
   text-align: center;
   color: white;
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 700;
   font-size: 26px;
   line-height: 32px;
   text-transform: uppercase;
 }
 
-.category__nav {
+.category__btn {
 }
-.category__nav_button {
+.category__btn_left {
+  width: 37px;
+  height: 37px;
+}
+.category__btn_right {
 }
 .text {
 }
