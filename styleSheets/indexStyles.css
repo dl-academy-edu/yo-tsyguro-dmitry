@@ -190,8 +190,8 @@
 .service__info {
   padding: 30px 100px 57px 120px;
   width: 60%;
-  marginl
 }
+
 .service__title {
   font-size: 38px;
   line-height: 46px;
@@ -202,9 +202,6 @@
 .service__list_item {
 }
 
-
-
-
 /* Стилизация кнопок сервисов*/
 .service__button {
   font-family: "Crimson Text", serif;
@@ -214,7 +211,6 @@
   line-height: 34px;
   width: 326px;
   height: 55px;
-  padding: ;
   text-align: start;
   border-width: 0;
   background-color: white;
@@ -224,7 +220,7 @@
   content: "";
   width: 100%;
   height: 100%;
- 
+
   position: absolute;
   top: 0;
   left: -60px;
@@ -248,7 +244,6 @@
 .learn_more_button {
 }
 
-
 /* Стилизация секции партнеры*/
 
 .partners {
@@ -259,11 +254,13 @@
 .partners__list {
   margin-top: 91px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 .partners__list_item {
+  width: auto;
 }
-
 
 /* Стилизация секции с дополнительной информацией и картой*/
 
@@ -279,25 +276,24 @@
   position: relative;
 }
 .additional_service::before {
-  content: '';
+  content: "";
   left: 0;
   top: 26px;
   width: 100%;
   height: 100%;
-  background: #E1F0F7;
+  background: #e1f0f7;
   position: absolute;
-  z-index: -1;  
+  z-index: -1;
 }
 .additional_service__title {
   margin-bottom: 10px;
 }
 .additional_service__notice {
-  font-family: 'Crimson Text';
+  font-family: "Crimson Text";
   font-style: italic;
   font-weight: 400;
   font-size: 26px;
-  line-height: 34px;  
- 
+  line-height: 34px;
 }
 .additional_service__text {
   margin-top: 10px;
@@ -313,20 +309,20 @@
 }
 
 .contacts::before {
-  content: '';
+  content: "";
   left: 0;
   top: 26px;
   width: 100%;
   height: 55%;
-  background: #E1F0F7;
+  background: #e1f0f7;
   position: absolute;
-  z-index: -1;  
+  z-index: -1;
 }
 
 .contacts__title {
   margin-bottom: 20px;
 }
-.contacts__text {  
+.contacts__text {
 }
 
 .map {
@@ -334,18 +330,16 @@
   width: 100%;
 }
 
-
-
 /* Стилизация Popup "Contact_us" */
 
 .popup {
   display: none;
   width: 680px;
-  background-color: #E5EAF8;
+  background-color: #e5eaf8;
   box-sizing: border-box;
   padding: 42px 40px;
   font-size: 14px;
-  line-height: 19px; 
+  line-height: 19px;
   position: relative;
 }
 
@@ -358,8 +352,8 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  position:absolute;
-  top:0;
+  position: absolute;
+  top: 0;
   right: -25px;
 }
 
@@ -372,7 +366,7 @@
   display: block;
   width: 100%;
   padding: 14px 0 11px 20px;
-  border: 1px solid #00000033
+  border: 1px solid #00000033;
 }
 
 .popup__phone_email_container {
@@ -381,9 +375,9 @@
   column-gap: 20px;
 }
 
-.popup__phone_container, .popup__email_container {
+.popup__phone_container,
+.popup__email_container {
   width: 100%;
-  
 }
 
 .popup__message_container {
@@ -397,12 +391,12 @@
 }
 
 .popup__checkbox {
-   display: none; 
+  display: none;
 }
 
 .popup__checkbox-text {
 }
-.popup__checkbox-text:before{
+.popup__checkbox-text:before {
   content: "";
   display: inline-block;
   vertical-align: middle;
@@ -419,9 +413,9 @@
 }
 
 .popup__checkbox-text:hover:before {
-outline: 2px solid #C29974;
-outline-offset: 2px;
-border-radius: 3px;
+  outline: 2px solid #c29974;
+  outline-offset: 2px;
+  border-radius: 3px;
 }
 
 .popup__checkbox:checked ~ .popup__checkbox-text:before {
