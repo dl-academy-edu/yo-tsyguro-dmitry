@@ -1,6 +1,9 @@
 .main {
-  padding-top: 231px;
+  padding: 231px 110px 0 110px;
 }
+
+/* Стили баннера */
+
 .banner {
 }
 
@@ -32,6 +35,7 @@
 .banner__number {
   font-family: "Montserrat", sans-serif;
   font-size: 60px;
+  line-height: 73px;
   font-weight: 200;
   opacity: 5%;
 }
@@ -93,6 +97,9 @@
   position: relative;
   z-index: 1;
 }
+
+/* Стили категорий */
+
 .category {
   margin-top: 90px;
 }
@@ -138,60 +145,285 @@
   color: white;
   font-size: 26px;
   line-height: 32px;
-  text-transform: uppercase;
 }
 
-.category__btn {
+.category__scroll {
+  display: flex;
+  margin-top: 30px;
+  max-width: 640px;
 }
-.category__btn_left {
+.category__btn_left,
+.category__btn_right {
   width: 37px;
   height: 37px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(112, 187, 220, 0.2);
+  border: 0;
+}
+.category__btn_left {
+  background-image: url(../static/icons/btnLeft.svg);
 }
 .category__btn_right {
+  background-image: url(../static/icons/btnRight.svg);
+  margin-left: 6px;
+  margin-right: 20px;
 }
+.category__btn_text {
+  display: none;
+}
+
 .text {
 }
 .category__nav_commentary {
 }
 .service {
+  margin-top: 90px;
+  display: flex;
 }
 .service__picture {
+  width: 40%;
+}
+.service__img {
+  width: 100%;
 }
 .service__info {
+  padding: 30px 100px 57px 120px;
+  width: 60%;
+  marginl
 }
 .service__title {
+  font-size: 38px;
+  line-height: 46px;
 }
 .service__list {
+  margin-top: 6px;
 }
 .service__list_item {
 }
+
+
+
+
+/* Стилизация кнопок сервисов*/
 .service__button {
+  font-family: "Crimson Text", serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 34px;
+  width: 326px;
+  height: 55px;
+  padding: ;
+  text-align: start;
+  border-width: 0;
+  background-color: white;
+  position: relative;
 }
-.service__info_text {
+.service__button::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+ 
+  position: absolute;
+  top: 0;
+  left: -60px;
 }
+.service__button:hover:before {
+  background-color: #70bbdc33;
+}
+
+.service__button:focus {
+  font-weight: 700;
+}
+.service__button:focus:before {
+  background-color: #70bbdc33;
+}
+
+.service_text {
+  margin-top: 20px;
+  margin-bottom: 26px;
+}
+
 .learn_more_button {
 }
+
+
+/* Стилизация секции партнеры*/
+
 .partners {
 }
 .parters__title {
+  display: none;
 }
 .partners__list {
+  margin-top: 91px;
+  display: flex;
+  justify-content: space-between;
 }
 .partners__list_item {
 }
+
+
+/* Стилизация секции с дополнительной информацией и картой*/
+
 .additional_services {
+  margin-top: 90px;
+  margin-bottom: 50px;
+  display: flex;
+  column-gap: 57px;
 }
 .additional_service {
+  padding: 0 30px;
+  height: 100%;
+  position: relative;
+}
+.additional_service::before {
+  content: '';
+  left: 0;
+  top: 26px;
+  width: 100%;
+  height: 100%;
+  background: #E1F0F7;
+  position: absolute;
+  z-index: -1;  
 }
 .additional_service__title {
+  margin-bottom: 10px;
+}
+.additional_service__notice {
+  font-family: 'Crimson Text';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 34px;  
+ 
 }
 .additional_service__text {
+  margin-top: 10px;
+  font-weight: 400;
 }
 .buy_now_button {
+  margin-top: 20px;
 }
 .contacts {
+  padding: 0 30px;
+  height: 100%;
+  position: relative;
 }
+
+.contacts::before {
+  content: '';
+  left: 0;
+  top: 26px;
+  width: 100%;
+  height: 55%;
+  background: #E1F0F7;
+  position: absolute;
+  z-index: -1;  
+}
+
 .contacts__title {
+  margin-bottom: 20px;
 }
-.contacts__text {
+.contacts__text {  
+}
+
+.map {
+  margin-top: 30px;
+  width: 100%;
+}
+
+
+
+/* Стилизация Popup "Contact_us" */
+
+.popup {
+  display: none;
+  width: 680px;
+  background-color: #E5EAF8;
+  box-sizing: border-box;
+  padding: 42px 40px;
+  font-size: 14px;
+  line-height: 19px; 
+  position: relative;
+}
+
+.popup:after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-image: url("../static/icons/crossExit.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position:absolute;
+  top:0;
+  right: -25px;
+}
+
+.popup_title {
+  display: none;
+}
+
+.popup__field {
+  margin-top: 3px;
+  display: block;
+  width: 100%;
+  padding: 14px 0 11px 20px;
+  border: 1px solid #00000033
+}
+
+.popup__phone_email_container {
+  margin-top: 20px;
+  display: flex;
+  column-gap: 20px;
+}
+
+.popup__phone_container, .popup__email_container {
+  width: 100%;
+  
+}
+
+.popup__message_container {
+  margin-top: 20px;
+}
+
+.popup__checkbox_container {
+  margin-top: 20px;
+  margin-bottom: 17px;
+  display: flex;
+}
+
+.popup__checkbox {
+   display: none; 
+}
+
+.popup__checkbox-text {
+}
+.popup__checkbox-text:before{
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 19px;
+  height: 19px;
+  /* box-sizing: border-box;
+
+  border: 2px solid #C29974;
+  border-radius: 3px; */
+  background-image: url("../static/icons/checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 15px;
+}
+
+.popup__checkbox-text:hover:before {
+outline: 2px solid #C29974;
+outline-offset: 2px;
+border-radius: 3px;
+}
+
+.popup__checkbox:checked ~ .popup__checkbox-text:before {
+  background-image: url("../static/icons/checkboxChecked.svg");
 }
