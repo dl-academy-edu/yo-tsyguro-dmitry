@@ -5,6 +5,12 @@
     <meta http_equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../styleSheets/common.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&family=Montserrat:wght@200;700&family=Open+Sans:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>DLK</title>
   </head>
   <body>
@@ -36,10 +42,10 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__list_item">
-            <a href="./blog.html" class="nav_link">Blog</a>
+            <a href="./pages/blog.html" class="nav__link">Blog</a>
           </li>
           <li class="nav__list_item">
-            <a href="./catalog.html" class="nav__link">Catalog</a>
+            <a href="./pages/catalog.html" class="nav__link">Catalog</a>
           </li>
           <li class="nav__list_item">
             <a href="#" class="nav__link">About us</a>
@@ -59,7 +65,7 @@
         />
       </svg>
 
-      <a href="../pages/contactUs.html" class="contact_us_link">Contact us</a>
+      <a href="./pages/contactUs.html" class="contact_us_link">Contact us</a>
     </header>
     <main class="main">
       <section class="contact_us">
@@ -122,135 +128,153 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__menu">
-        <div class="footer__navigation">
-          <h2 class="footer__navigation_title">Navigation</h2>
-          <ul class="footer__navigation_list">
-            <li class="footer__navigation_list_item">
-              <a href="#" class="footer__menu_link">About us</a>
-            </li>
-            <li class="footer__navigation_list_item">
-              <a href="#" class="footer__menu_link">Blog</a>
-            </li>
-            <li class="footer__navigation_list_item">
-              <a href="#" class="footer__menu_link">Design Services</a>
-            </li>
-            <li class="footer__navigation_list_item">
-              <a href="#" class="footer__menu_link">Featured On</a>
-            </li>
-            <li class="footer__navigation_list_item">
-              <a href="#" class="footer__menu_link">2018 Holiday Catalog</a>
-            </li>
-            <li class="footer__navigation_list_item">
-              <a href="#" class="footer__menu_link">Shop By Designer</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__custumer_info">
-          <h2 class="footer__custumer_info_title">Custumer Information</h2>
-          <ul class="footer__custumer_info_list">
-            <li class="footer__custumer_info_list_item">
-              <a href="#" class="footer__menu_link">Contact Us</a>
-            </li>
-            <li class="footer__custumer_info_list_item">
-              <a href="#" class="footer__menu_link">Sale Exclusions</a>
-            </li>
-            <li class="footer__custumer_info_list_item">
-              <a href="#" class="footer__menu_link">Shippings & Returns</a>
-            </li>
-            <li class="footer__custumer_info_list_item">
-              <a href="#" class="footer_menu_link">Terms & Conditions</a>
-            </li>
-            <li class="footer__custumer_info_list_item">
-              <a href="#" class="footer_menu_link">Privacy Policy</a>
-            </li>
-            <li class="footer__custumer_info_list_item">
-              <a href="#" class="footer_menu_link">Search</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__connect">
-          <h2 class="footer__connect_title">Connect</h2>
-          <form class="footer__subscribe">
-            <input
-              type="email"
-              class="subscribe_email"
-              placeholder="Email"
-              required
-            />
-            <button class="button subscribe_button">Join</button>
-          </form>
-          <div class="social_lincs">
-            <ul class="social_links_list">
-              <li class="social_links_item">
-                <a href="https://facebook.com" class="social_link facebook"
-                  >Facebook</a
-                >
+      <div class="page_container">
+        <nav class="footer__menu">
+          <div class="footer__menu_section">
+            <h2 class="footer__title">Navigation</h2>
+            <ul class="footer__navigation_list">
+              <li class="footer__navigation_list_item">
+                <a href="#" class="footer__menu_link">About us</a>
               </li>
-              <li class="social_links_item">
-                <a href="https://twitter.com" class="social_link twitter"
-                  >Twitter</a
-                >
+              <li class="footer__navigation_list_item">
+                <a href="#" class="footer__menu_link">Blog</a>
               </li>
-              <li class="social_links_item">
-                <a
-                  href="https://www.pinterest.com"
-                  class="social_link pinterest"
-                  >Pinterest</a
-                >
+              <li class="footer__navigation_list_item">
+                <a href="#" class="footer__menu_link">Design Services</a>
               </li>
-              <li class="social_links_item">
-                <a href="http://instagram.com" class="social_link instagram"
-                  >Instagram</a
-                >
+              <li class="footer__navigation_list_item">
+                <a href="#" class="footer__menu_link">Featured On</a>
+              </li>
+              <li class="footer__navigation_list_item">
+                <a href="#" class="footer__menu_link">2018 Holiday Catalog</a>
+              </li>
+              <li class="footer__navigation_list_item">
+                <a href="#" class="footer__menu_link">Shop By Designer</a>
               </li>
             </ul>
           </div>
+          <div class="footer__menu_section">
+            <h2 class="footer__title">Custumer Information</h2>
+            <ul class="footer__custumer_info_list">
+              <li class="footer__custumer_info_list_item">
+                <a href="#" class="footer__menu_link">Contact Us</a>
+              </li>
+              <li class="footer__custumer_info_list_item">
+                <a href="#" class="footer__menu_link">Sale Exclusions</a>
+              </li>
+              <li class="footer__custumer_info_list_item">
+                <a href="#" class="footer__menu_link">Shippings & Returns</a>
+              </li>
+              <li class="footer__custumer_info_list_item">
+                <a href="#" class="footer__menu_link">Terms & Conditions</a>
+              </li>
+              <li class="footer__custumer_info_list_item">
+                <a href="#" class="footer__menu_link">Privacy Policy</a>
+              </li>
+              <li class="footer__custumer_info_list_item">
+                <a href="#" class="footer__menu_link">Search</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__menu_section">
+            <h2 class="footer__title">Connect</h2>
+            <form class="footer__subscribe">
+              <input
+                type="email"
+                class="subscribe_email"
+                placeholder="Email"
+                required
+              />
+              <button class="button subscribe_button">Join</button>
+            </form>
+            <div class="social_lincs">
+              <ul class="social_links_list">
+                <li class="social_links_item">
+                  <a href="https://facebook.com" class="social_link facebook"
+                    ><span class="social_link_text">Facebook</span></a
+                  >
+                </li>
+                <li class="social_links_item">
+                  <a href="https://twitter.com" class="social_link twitter"
+                    ><span class="social_link_text">Twitter</span></a
+                  >
+                </li>
+                <li class="social_links_item">
+                  <a
+                    href="https://www.pinterest.com"
+                    class="social_link pinterest"
+                    ><span class="social_link_text">Pinterest</span></a
+                  >
+                </li>
+                <li class="social_links_item">
+                  <a href="http://instagram.com" class="social_link instagram"
+                    ><span class="social_link_text">Instagram</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="footer__additional_info">
+          <div class="footer__additional_info_container">
+            <span class="rating_text footer__menu_link">Company Rating</span>
+            <div class="rating_caption">
+              <input
+                class="rating_radio"
+                type="radio"
+                id="star-1"
+                name="rating"
+                value="1"
+                aria-label="Очень плохо"
+              />
+              <label for="star-1" class="rating_star"></label>
+              <input
+                class="rating_radio"
+                type="radio"
+                id="star-2"
+                name="rating"
+                value="2"
+                aria-label="Бывало и лучше"
+              />
+              <label for="star-2" class="rating_star"></label>
+              <input
+                class="rating_radio"
+                type="radio"
+                id="star-3"
+                name="rating"
+                value="3"
+                aria-label="Сойдёт"
+              />
+              <label for="star-3" class="rating_star"></label>
+              <input
+                class="rating_radio"
+                type="radio"
+                id="star-4"
+                name="rating"
+                value="4"
+                aria-label="Неплохо"
+              />
+              <label for="star-4" class="rating_star"></label>
+              <input
+                class="rating_radio"
+                type="radio"
+                id="star-5"
+                name="rating"
+                value="5"
+                aria-label="Отлично"
+              />
+              <label for="star-5" class="rating_star"></label>
+            </div>
+          </div>
+          <div class="footer__additional_info_container footer__menu_link">
+            <p>Copyright © 2018 Dlk • Design Life Kids</p>
+          </div>
+          <div class="footer__additional_info_container">
+            <a href="https://directline.digital/" class="developer_link"
+              >Web Design — Direct Line Development</a
+            >
+          </div>
         </div>
-      </div>
-      <div class="footer__additional_info">
-        <div class="rating">
-          <span class="rating__text">Company Rating</span>
-          <input
-            class="rating__star"
-            type="radio"
-            name="rating"
-            value="1"
-            aria-label="Очень плохо"
-          />
-          <input
-            class="rating__star"
-            type="radio"
-            name="rating"
-            value="1"
-            aria-label="Бывало и лучше"
-          />
-          <input
-            class="rating__star"
-            type="radio"
-            name="rating"
-            value="1"
-            aria-label="Сойдёт"
-          />
-          <input
-            class="rating__star"
-            type="radio"
-            name="rating"
-            value="1"
-            aria-label="Неплохо"
-          />
-          <input
-            class="rating__star"
-            type="radio"
-            name="rating"
-            value="1"
-            aria-label="Отлично"
-          />
-        </div>
-        <p>Copyright © 2018 Dlk • Design Life Kids</p>
-        <a href="#" class="developer_link"
-          >Web Design — Direct Line Development</a
-        >
       </div>
     </footer>
   </body>
