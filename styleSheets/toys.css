@@ -1,0 +1,159 @@
+/* //////////////Стилизация поле с фильтрами//////////// */
+
+.filter_section_container {
+  background-color: #7d97da33;
+  padding: 42px 0;
+}
+
+.product_filter {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+/* Слайдер */
+
+.cost_field {
+  display: block;
+}
+
+.cost_values_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter_title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+
+/* color checkbox */
+.color_selection {
+  margin-left: 94px;
+}
+
+.color_selection__list_item:nth-child(n + 2) {
+  margin-top: 15px;
+}
+
+.color_checkbox {
+  display: none;
+}
+
+.checkbox_name:before {
+  content: "";
+  display: inline-block;
+  vertical-align: sub;
+  width: 20px;
+  height: 20px;
+  background-image: url("../static/icons/checkbox.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+}
+
+.color_checkbox:checked ~ .checkbox_name:before {
+  background-image: url("../static/icons/checkboxChecked.svg");
+}
+
+/* delivery radio */
+.delivery_selection {
+  margin-left: 124px;
+}
+
+.delivery_group_list_item:nth-child(n + 2) {
+  margin-top: 10px;
+}
+
+.delivery_input {
+  display: none;
+}
+
+.delivery_group_name:before {
+  content: "";
+  display: inline-block;
+  vertical-align: sub;
+  width: 20px;
+  height: 20px;
+  background-image: url("../static/icons/radio.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 10px;
+}
+
+.delivery_input:checked ~ .delivery_group_name:before {
+  background-image: url("../static/icons/radioChecked.png");
+}
+
+/* amount radio */
+.amount_selection {
+  margin-left: 68px;
+}
+
+.amount_selection__list {
+  display: flex;
+}
+
+.amount_selection__list_item {
+}
+
+.amount_radio_input {
+  display: none;
+}
+
+.amount_radio_text {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 80px;
+  height: 35px;
+  background-color: white;
+}
+
+.amount_radio_input:checked ~ .amount_radio_text {
+  background-color: #f3d0db;
+}
+/* button  */
+
+.product_filter_button {
+  margin-top: 37px;
+  margin-left: 60px;
+  height: 40px;
+}
+
+/* ////////////Стилизация секции с товарами///////// */
+
+.toys_catalog {
+  margin-top: 60px;
+}
+
+.toys_catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.toys_catalog__list_item:nth-child(n + 4) {
+  margin-top: 20px;
+}
+
+.product {
+  padding: 0 auto;
+}
+
+.product_title {
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+}
+
+.product_price {
+  margin-top: 15px;
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}

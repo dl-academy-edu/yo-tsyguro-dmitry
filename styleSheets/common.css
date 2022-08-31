@@ -7,6 +7,9 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.main {
+  margin-top: 162px;
+}
 
 /* Шрифты */
 .font_title {
@@ -50,7 +53,7 @@ a {
   text-transform: uppercase;
   color: #ffffff;
   background: black;
-  padding: 11px 21px;
+  padding: 9px 22px;
   display: inline-block;
 }
 
@@ -61,6 +64,99 @@ ul {
 li {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Хлебные крошки*/
+.breadcrump {
+  margin-top: 15px;
+  display: flex;
+  margin-bottom: 50px;
+}
+.breadcrump_item {
+  position: relative;
+}
+.breadcrump_item:nth-child(n + 2) {
+  margin-left: 48px;
+}
+
+.breadcrump_item:nth-child(n + 2):before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 12px;
+  position: absolute;
+  top: 7px;
+  left: -25px;
+  background-image: url("../static/icons/btnRight.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.breadcrump_item:last-child {
+  opacity: 0.5;
+}
+
+.breadcrump_blog {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+/* Стилизация кнопок перелистывания */
+
+.page_nav {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.page_back,
+.page_forward {
+  width: 13px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  opacity: 0.5;
+  border: none;
+  cursor: pointer;
+}
+
+.page_back {
+  background-image: url("../static/icons/btnLeft.svg");
+}
+.page_forward {
+  background-image: url("../static/icons/btnRight.svg");
+}
+.page_nav_list {
+  display: flex;
+  width: 234px;
+  justify-content: space-between;
+}
+
+.page_number {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Стилизация главного заголовка страниц */
+.main__title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  text-transform: uppercase;
+  color: #1e0606;
 }
 
 /* Стилизация header*/
@@ -72,7 +168,7 @@ li {
   top: 0;
   width: 1180px;
   left: auto;
-  right: auto;
+  right: ;
   background-color: #ffffff;
   z-index: 10;
 }

@@ -420,39 +420,54 @@
         </div>
       </div>
     </footer>
-    <section class="popup">
-      <h1 class="popup_title">Contact us</h1>
-      <form action="#">
-        <div class="popup__name_container">
-          <label for="name-field" class="popup__name_field">Name</label>
-          <input type="text" id="name-field" class="popup__field" />
-        </div>
-        <div class="popup__phone_email_container">
-          <div class="popup__phone_container">
-            <label for="phone-field" class="popup__phone_field">Phone</label>
-            <input type="tel" id="phone-field" class="popup__field" />
+    <div class="popup_container">
+      <section class="popup">
+        <h1 class="popup_title">Contact us</h1>
+        <form action="#">
+          <div class="popup__name_container">
+            <label for="name-field" class="popup__name_field">Name</label>
+            <input type="text" id="name-field" class="popup__field" />
           </div>
-          <div class="popup__email_container">
-            <label for="email-field" class="popup__email_field">Email</label>
-            <input type="email" id="email-field" class="popup__field" />
+          <div class="popup__phone_email_container">
+            <div class="popup__phone_container">
+              <label for="phone-field" class="popup__phone_field">Phone</label>
+              <input type="tel" id="phone-field" class="popup__field" />
+            </div>
+            <div class="popup__email_container">
+              <label for="email-field" class="popup__email_field">Email</label>
+              <input type="email" id="email-field" class="popup__field" />
+            </div>
           </div>
-        </div>
-        <div class="popup__message_container">
-          <label for="message-field" class="popup__message_field"
-            >Message</label
-          >
-          <textarea class="popup__field" id="message-field" cols="30" rows="10">
-          </textarea>
-        </div>
-        <div class="popup__checkbox_container">
-          <input type="checkbox" id="checkbox-field" class="popup__checkbox" />
-          <label for="checkbox-field" class="popup__checkbox-text"
-            >By clicking on the button, you consent to the processing of your
-            personal data</label
-          >
-        </div>
-        <button type="submit" class="popup__submit_button">Submit</button>
-      </form>
-    </section>
+          <div class="popup__message_container">
+            <label for="message-field" class="popup__message_field"
+              >Message</label
+            >
+            <textarea
+              class="popup__field"
+              id="message-field"
+              cols="30"
+              rows="10"
+            >
+            </textarea>
+          </div>
+          <div class="popup__checkbox_container">
+            <input
+              type="checkbox"
+              id="checkbox-field"
+              class="popup__checkbox"
+            />
+            <label for="checkbox-field" class="popup__checkbox-text"
+              >By clicking on the button, you consent to the processing of your
+              personal data</label
+            >
+          </div>
+          <button type="submit" class="popup__submit_button button">
+            Submit
+          </button>
+        </form>
+        <button class="popup_close"></button>
+      </section>
+    </div>
   </body>
+  <script src="js/indexScript.js"></script>
 </html>
