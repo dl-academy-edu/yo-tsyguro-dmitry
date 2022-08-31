@@ -155,10 +155,12 @@
 .category__scroll {
   display: flex;
   margin-top: 30px;
-  max-width: 640px;
+  max-width: 680px;
 }
 .category__btn_left,
 .category__btn_right {
+  display: block;
+  box-sizing: border-box;
   width: 37px;
   height: 37px;
   background-repeat: no-repeat;
@@ -181,6 +183,7 @@
 .text {
 }
 .category__nav_commentary {
+  max-width: 580px;
 }
 .service {
   margin-top: 90px;
@@ -340,9 +343,22 @@
 }
 
 /* Стилизация Popup "Contact_us" */
+.popup_container {
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* width: 100vw;
+  height: 100vh; */
+  background-color: #7d97dacc;
+  z-index: 9999;
+}
 
 .popup {
-  display: none;
   width: 680px;
   background-color: #e5eaf8;
   box-sizing: border-box;
@@ -352,9 +368,9 @@
   position: relative;
 }
 
-.popup:after {
-  content: "";
-  display: block;
+.popup_close {
+  border: none;
+  background: none;
   width: 15px;
   height: 15px;
   background-image: url("../static/icons/crossExit.png");
@@ -425,4 +441,8 @@
 
 .popup__checkbox:checked ~ .popup__checkbox-text:before {
   background-image: url("../static/icons/checkboxChecked.svg");
+}
+
+.open_popup {
+  display: flex;
 }
