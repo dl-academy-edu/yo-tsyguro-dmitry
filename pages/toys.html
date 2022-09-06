@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF_8" />
-    <meta http_equiv="X_UA_Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device_width, initial_scale=1.0" />
-    <link rel="stylesheet" href="../styleSheets/common.css" />
-    <link rel="stylesheet" href="../styleSheets/toys.css" />
+    <link rel="stylesheet" href="/styleSheets/normalize.css" />
+    <link rel="stylesheet" href="../styleSheets/commonMini.css" />
+    <link rel="stylesheet" href="../styleSheets/toysMini.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,65 +16,73 @@
     <title>DLK Toys</title>
   </head>
   <body class="font_content">
-    <div class="page_container">
-      <header class="header">
-        <a href="/index.html">
-          <svg
-            width="102"
-            height="52"
-            viewBox="0 0 102 52"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M0.997559 0H19.1259C32.1442 0 41.4377 12.3713 41.4377 24.0356V27.7332C41.4377 39.3974 32.1442 51.7689 19.1259 51.7689H0.997559V0ZM38.6487 24.0356C38.6487 13.5132 30.2391 2.77333 19.1259 2.77333H3.78653V48.9956H19.1259C30.2391 48.9956 38.6487 38.2557 38.6487 27.7333V24.0356Z"
-              fill="#1E0606"
-            />
-            <path
-              d="M47.4805 0H50.2694V49.2267H65.144V52H47.4805V0Z"
-              fill="#1E0606"
-            />
-            <path
-              d="M68.8626 0V51.7689H71.6516V27.3833L72.3362 26.7025L97.1676 51.7689H101.083L74.3083 24.7414L99.1893 0H95.2451L71.6516 23.4612V0H68.8626Z"
-              fill="#1E0606"
-            />
-          </svg>
-        </a>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li class="nav__list_item">
-              <a href="./pages/blog.html" class="nav__link">Blog</a>
-            </li>
-            <li class="nav__list_item">
-              <a href="./pages/catalog.html" class="nav__link">Catalog</a>
-            </li>
-            <li class="nav__list_item">
-              <a href="#" class="nav__link">About us</a>
-            </li>
-          </ul>
-        </nav>
-        <svg
-          class="search_button"
-          width="25"
-          height="24"
-          viewBox="0 0 25 24"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M15.2617 3.26001C11.8388 3.26001 9.05639 6.08001 9.05639 9.52001C9.05639 10.98 9.55682 12.3 10.3775 13.38L4.49252 19.32C4.15223 19.68 4.15223 20.24 4.49252 20.58C4.67267 20.76 4.89286 20.84 5.11305 20.84C5.35325 20.84 5.57344 20.76 5.75359 20.58L11.6386 14.62C12.6595 15.36 13.9005 15.78 15.2416 15.78C18.6645 15.78 21.4469 12.96 21.4469 9.52001C21.4669 6.06001 18.6846 3.26001 15.2617 3.26001ZM15.2617 14.2C12.7195 14.2 10.6578 12.1 10.6578 9.52001C10.6578 6.94001 12.7195 4.84001 15.2617 4.84001C17.8038 4.84001 19.8656 6.94001 19.8656 9.52001C19.8656 12.1 17.8038 14.2 15.2617 14.2ZM18.3643 9.60001C18.3243 9.94001 18.024 10.2 17.6837 10.2C17.6437 10.2 17.6237 10.2 17.5836 10.2C17.2033 10.14 16.9431 9.80001 16.9831 9.42001C17.1232 8.38001 15.9623 7.84001 15.9022 7.82001C15.5619 7.66001 15.4018 7.24001 15.5619 6.90001C15.722 6.56001 16.1224 6.40001 16.4827 6.54001C16.5628 6.56001 18.6445 7.52001 18.3643 9.60001ZM16.9031 11.12C17.0432 11.26 17.1433 11.48 17.1433 11.68C17.1433 11.9 17.0632 12.1 16.9031 12.24C16.7629 12.38 16.5427 12.48 16.3426 12.48C16.1424 12.48 15.9222 12.4 15.7821 12.24C15.642 12.1 15.5419 11.88 15.5419 11.68C15.5419 11.48 15.622 11.26 15.7821 11.12C15.9222 10.98 16.1424 10.88 16.3426 10.88C16.5427 10.88 16.7429 10.96 16.9031 11.12Z"
-            fill="#1E0606"
-          />
-        </svg>
-
-        <a href="./pages/contactUs.html" class="contact_us_link">Contact us</a>
-      </header>
-      </div>
-      <main class="main">
+    <div class="header_wrapper">
+      <div class="page_container">
         <div class="page_container">
-        <h1 class="main__title">Toy for kids</h1>
-        <ul class="breadcrump">
+          <header class="header">
+            <a href="/index.html">
+              <svg
+                width="102"
+                height="52"
+                viewBox="0 0 102 52"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="logo"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M0.997559 0H19.1259C32.1442 0 41.4377 12.3713 41.4377 24.0356V27.7332C41.4377 39.3974 32.1442 51.7689 19.1259 51.7689H0.997559V0ZM38.6487 24.0356C38.6487 13.5132 30.2391 2.77333 19.1259 2.77333H3.78653V48.9956H19.1259C30.2391 48.9956 38.6487 38.2557 38.6487 27.7333V24.0356Z"
+                  fill="#1E0606"
+                />
+                <path
+                  d="M47.4805 0H50.2694V49.2267H65.144V52H47.4805V0Z"
+                  fill="#1E0606"
+                />
+                <path
+                  d="M68.8626 0V51.7689H71.6516V27.3833L72.3362 26.7025L97.1676 51.7689H101.083L74.3083 24.7414L99.1893 0H95.2451L71.6516 23.4612V0H68.8626Z"
+                  fill="#1E0606"
+                />
+              </svg>
+            </a>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__list_item">
+                  <a href="./blog.html" class="nav__link">Blog</a>
+                </li>
+                <li class="nav__list_item">
+                  <a href="./catalog.html" class="nav__link">Catalog</a>
+                </li>
+                <li class="nav__list_item">
+                  <a href="#" class="nav__link">About us</a>
+                </li>
+              </ul>
+            </nav>
+            <svg
+              class="search_button"
+              width="25"
+              height="24"
+              viewBox="0 0 25 24"
+              xmlns="http://www.w3.org/2000/svg"
+              tabindex="0"
+            >
+              <path
+                d="M15.2617 3.26001C11.8388 3.26001 9.05639 6.08001 9.05639 9.52001C9.05639 10.98 9.55682 12.3 10.3775 13.38L4.49252 19.32C4.15223 19.68 4.15223 20.24 4.49252 20.58C4.67267 20.76 4.89286 20.84 5.11305 20.84C5.35325 20.84 5.57344 20.76 5.75359 20.58L11.6386 14.62C12.6595 15.36 13.9005 15.78 15.2416 15.78C18.6645 15.78 21.4469 12.96 21.4469 9.52001C21.4669 6.06001 18.6846 3.26001 15.2617 3.26001ZM15.2617 14.2C12.7195 14.2 10.6578 12.1 10.6578 9.52001C10.6578 6.94001 12.7195 4.84001 15.2617 4.84001C17.8038 4.84001 19.8656 6.94001 19.8656 9.52001C19.8656 12.1 17.8038 14.2 15.2617 14.2ZM18.3643 9.60001C18.3243 9.94001 18.024 10.2 17.6837 10.2C17.6437 10.2 17.6237 10.2 17.5836 10.2C17.2033 10.14 16.9431 9.80001 16.9831 9.42001C17.1232 8.38001 15.9623 7.84001 15.9022 7.82001C15.5619 7.66001 15.4018 7.24001 15.5619 6.90001C15.722 6.56001 16.1224 6.40001 16.4827 6.54001C16.5628 6.56001 18.6445 7.52001 18.3643 9.60001ZM16.9031 11.12C17.0432 11.26 17.1433 11.48 17.1433 11.68C17.1433 11.9 17.0632 12.1 16.9031 12.24C16.7629 12.38 16.5427 12.48 16.3426 12.48C16.1424 12.48 15.9222 12.4 15.7821 12.24C15.642 12.1 15.5419 11.88 15.5419 11.68C15.5419 11.48 15.622 11.26 15.7821 11.12C15.9222 10.98 16.1424 10.88 16.3426 10.88C16.5427 10.88 16.7429 10.96 16.9031 11.12Z"
+                fill="#1E0606"
+              />
+            </svg>
+            <a href="./pages/contactUs.html" class="contact_us_link"
+              >Contact us</a
+            >
+          </header>
+        </div>
+      </div>
+    </div>
+
+    <main class="main">
+      <div class="page_container">
+        <h1 class="main__title font_title">Toy for kids</h1>
+        <ul class="breadcrump font_decor">
           <li class="breadcrump_item">
             <a href="../index.html">Home</a>
           </li>
@@ -85,184 +94,205 @@
           </li>
         </ul>
       </div>
-        <div class="filter_section_container">
-          <section class="product_filter page_container">
-            <fieldset class="slider_values">
-              <legend class="filter_title">Cost</legend>
-              <input
-                type="range"
-                class="cost_field"
-                id="start"
-                name="Cost"
-                min="0"
-                max="500"
-                value="100"
-              />
-              <div class="cost_values_container">
-                <span>0</span>
-                <span>500</span>
-              </div>
-            </fieldset>
-            <fieldset class="color_selection">
-              <legend class="filter_title">Color</legend>
-              <ul class="color_selection__list">
-                <li class="color_selection__list_item">
-                  <input
-                    type="checkbox"
-                    id="checkbox-black"
-                    class="color_checkbox"
-                  />
-                  <label for="checkbox-black" class="checkbox_name"
-                    >Black</label
-                  >
-                </li>
-                <li class="color_selection__list_item">
-                  <input
-                    type="checkbox"
-                    id="checkbox-blue"
-                    class="color_checkbox"
-                  />
-                  <label for="checkbox-blue" class="checkbox_name">Blue</label>
-                </li>
-                <li class="color_selection__list_item">
-                  <input
-                    type="checkbox"
-                    id="checkbox-green"
-                    class="color_checkbox"
-                  />
-                  <label for="checkbox-green" class="checkbox_name"
-                    >Green</label
-                  >
-                </li>
-                <li class="color_selection__list_item">
-                  <input
-                    type="checkbox"
-                    id="checkbox-white"
-                    class="color_checkbox"
-                  />
-                  <label for="checkbox-white" class="checkbox_name"
-                    >White</label
-                  >
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="delivery_selection">
-              <legend class="filter_title">Delivery</legend>
-              <ul class="delivery_group_list">
-                <li class="delivery_group_list_item">
-                  <input
-                    class="delivery_input"
-                    name="shipping"
-                    type="radio"
-                    id="delivery-free"
-                    value="Free shipping"
-                  />
-                  <label class="delivery_group_name" for="delivery-free"
-                    >Free shipping</label
-                  >
-                </li>
-                <li class="delivery_group_list_item">
-                  <input
-                    class="delivery_input"
-                    name="shipping"
-                    type="radio"
-                    id="delivery-fast"
-                    value="Fast shipping"
-                  />
-                  <label class="delivery_group_name" for="delivery-fast"
-                    >Fast shipping</label
-                  >
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="amount_selection">
-              <legend class="filter_title">Amount</legend>
-              <ul class="amount_selection__list">
-                <li class="amount_selection__list_item">
-                  <input
-                    type="radio"
-                    id="checkbox-0-5"
-                    name="amount"
-                    class="amount_radio_input"
-                    value="0-5"
-                    checked
-                  />
-                  <label class="amount_radio_text" for="checkbox-0-5"
-                    >0-5</label
-                  >
-                </li>
-                <li class="amount_selection__list_item">
-                  <input
-                    type="radio"
-                    id="checkbox-10-20"
-                    name="amount"
-                    class="amount_radio_input"
-                    value="10-20"
-                  />
-                  <label class="amount_radio_text" for="checkbox-10-20"
-                    >10-20</label
-                  >
-                </li>
-                <li class="amount_selection__list_item">
-                  <input
-                    type="radio"
-                    id="checkbox-20-50"
-                    name="amount"
-                    class="amount_radio_input"
-                    value="20-50"
-                  />
-                  <label class="amount_radio_text" for="checkbox-20-50"
-                    >20-50</label
-                  >
-                </li>
-              </ul>
-            </fieldset>
-            <button class="button product_filter_button" type="submit">
-              Apply
-            </button>
-          </section>
-        </div>
-        <div class="page_container">
+      <div class="filter_section_container">
+        <section class="product_filter page_container">
+          <h2 class="search_filter_title">Search filter</h2>
+          <fieldset class="slider_values">
+            <legend class="filter_title">Cost</legend>
+            <input
+              type="range"
+              class="cost_field"
+              id="start"
+              name="Cost"
+              min="0"
+              max="500"
+              value="100"
+            />
+            <div class="cost_values_container">
+              <span>0</span>
+              <span>500</span>
+            </div>
+          </fieldset>
+          <fieldset class="color_selection">
+            <legend class="filter_title">Color</legend>
+            <ul class="color_selection__list">
+              <li class="color_selection__list_item">
+                <input
+                  type="checkbox"
+                  id="checkbox-black"
+                  class="color_checkbox"
+                />
+                <label for="checkbox-black" class="checkbox_name">Black</label>
+              </li>
+              <li class="color_selection__list_item">
+                <input
+                  type="checkbox"
+                  id="checkbox-blue"
+                  class="color_checkbox"
+                />
+                <label for="checkbox-blue" class="checkbox_name">Blue</label>
+              </li>
+              <li class="color_selection__list_item">
+                <input
+                  type="checkbox"
+                  id="checkbox-green"
+                  class="color_checkbox"
+                />
+                <label for="checkbox-green" class="checkbox_name">Green</label>
+              </li>
+              <li class="color_selection__list_item">
+                <input
+                  type="checkbox"
+                  id="checkbox-white"
+                  class="color_checkbox"
+                />
+                <label for="checkbox-white" class="checkbox_name">White</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="delivery_selection">
+            <legend class="filter_title">Delivery</legend>
+            <ul class="delivery_group_list">
+              <li class="delivery_group_list_item">
+                <input
+                  class="delivery_input"
+                  name="shipping"
+                  type="radio"
+                  id="delivery-free"
+                  value="Free shipping"
+                />
+                <label class="delivery_group_name" for="delivery-free"
+                  >Free shipping</label
+                >
+              </li>
+              <li class="delivery_group_list_item">
+                <input
+                  class="delivery_input"
+                  name="shipping"
+                  type="radio"
+                  id="delivery-fast"
+                  value="Fast shipping"
+                />
+                <label class="delivery_group_name" for="delivery-fast"
+                  >Fast shipping</label
+                >
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="amount_selection">
+            <legend class="filter_title">Amount</legend>
+            <ul class="amount_selection__list">
+              <li class="amount_selection__list_item">
+                <input
+                  type="radio"
+                  id="checkbox-0-5"
+                  name="amount"
+                  class="amount_radio_input"
+                  value="0-5"
+                  checked
+                />
+                <label class="amount_radio_text" for="checkbox-0-5">0-5</label>
+              </li>
+              <li class="amount_selection__list_item">
+                <input
+                  type="radio"
+                  id="checkbox-10-20"
+                  name="amount"
+                  class="amount_radio_input"
+                  value="10-20"
+                />
+                <label class="amount_radio_text" for="checkbox-10-20"
+                  >10-20</label
+                >
+              </li>
+              <li class="amount_selection__list_item">
+                <input
+                  type="radio"
+                  id="checkbox-20-50"
+                  name="amount"
+                  class="amount_radio_input"
+                  value="20-50"
+                />
+                <label class="amount_radio_text" for="checkbox-20-50"
+                  >20-50</label
+                >
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button product_filter_button" type="submit">
+            Apply
+          </button>
+        </section>
+      </div>
+      <div class="page_container">
         <section class="toys_catalog">
+          <h2 class="toys_catalog__title">Toys catalog</h2>
           <ul class="toys_catalog__list">
             <li class="toys_catalog__list_item">
               <article class="product">
-                <img src="../static/images/sharkBag.png" alt="sharky img" />
+                <img
+                  src="../static/images/sharkBag.png"
+                  class="toy_img"
+                  alt="sharky img"
+                />
+                <div class="hidden_link font_title">
+                  <span>Learn more</span>
+                </div>
                 <h2 class="product_title">SHARKY BEAN BAG CHAIR COVER</h2>
                 <span class="product_price">$60.00 USD</span>
               </article>
             </li>
             <li class="toys_catalog__list_item">
               <article class="product">
-                <img src="../static/images/brass.png" alt="sharky img" />
+                <img
+                  src="../static/images/brass.png"
+                  class="toy_img"
+                  alt="sharky img"
+                />
                 <h2 class="product_title">BRASS DECO FRAMES</h2>
                 <span class="product_price">$66.00 USD</span>
               </article>
             </li>
             <li class="toys_catalog__list_item">
               <article class="product">
-                <img src="../static/images/cibo.png" alt="sharky img" />
+                <img
+                  src="../static/images/cibo.png"
+                  class="toy_img"
+                  alt="sharky img"
+                />
                 <h2 class="product_title">CIBO FULL APRON</h2>
                 <span class="product_price">$60.00 USD</span>
               </article>
             </li>
             <li class="toys_catalog__list_item">
               <article class="product">
-                <img src="../static/images/gatcha.png" alt="sharky img">
+                <img
+                  src="../static/images/gatcha.png"
+                  class="toy_img"
+                  alt="sharky img"
+                />
                 <h2 class="product_title">GATCHA GATCHA GUMBALL MACHINE</h2>
                 <span class="product_price">$56.00 USD</span>
               </article>
             </li>
             <li class="toys_catalog__list_item">
               <article class="product">
-                <img src="../static/images/candle.png" alt="sharky img" />
+                <img
+                  src="../static/images/candle.png"
+                  class="toy_img"
+                  alt="sharky img"
+                />
                 <h2 class="product_title">CHRISTMAS ADVENT SCENTED CANDLE</h2>
                 <span class="product_price">$29.00 USD</span>
               </article>
             </li>
             <li class="toys_catalog__list_item">
               <article class="product">
-                <img src="../static/images/tangle.png" alt="sharky img" />
+                <img
+                  src="../static/images/tangle.png"
+                  class="toy_img"
+                  alt="sharky img"
+                />
                 <h2 class="product_title">TANGLE SPINNING TEA LIGHT</h2>
                 <span class="product_price">$56.00 USD</span>
               </article>
@@ -288,8 +318,8 @@
           </div>
         </section>
       </div>
-      </main>
-    </div>
+    </main>
+
     <footer class="footer">
       <div class="page_container">
         <nav class="footer__menu">
@@ -300,7 +330,7 @@
                 <a href="#" class="footer__menu_link">About us</a>
               </li>
               <li class="footer__navigation_list_item">
-                <a href="#" class="footer__menu_link">Blog</a>
+                <a href="./blog.html" class="footer__menu_link">Blog</a>
               </li>
               <li class="footer__navigation_list_item">
                 <a href="#" class="footer__menu_link">Design Services</a>
@@ -309,7 +339,9 @@
                 <a href="#" class="footer__menu_link">Featured On</a>
               </li>
               <li class="footer__navigation_list_item">
-                <a href="#" class="footer__menu_link">2018 Holiday Catalog</a>
+                <a href="/pages/toys.html" class="footer__menu_link"
+                  >2018 Holiday Catalog</a
+                >
               </li>
               <li class="footer__navigation_list_item">
                 <a href="#" class="footer__menu_link">Shop By Designer</a>
@@ -320,7 +352,9 @@
             <h2 class="footer__title">Custumer Information</h2>
             <ul class="footer__custumer_info_list">
               <li class="footer__custumer_info_list_item">
-                <a href="#" class="footer__menu_link">Contact Us</a>
+                <a href="./pages/contactUs.html" class="footer__menu_link"
+                  >Contact Us</a
+                >
               </li>
               <li class="footer__custumer_info_list_item">
                 <a href="#" class="footer__menu_link">Sale Exclusions</a>
@@ -381,7 +415,7 @@
         <div class="footer__additional_info">
           <div class="footer__additional_info_container">
             <span class="rating_text footer__menu_link">Company Rating</span>
-            <div class="rating_caption">
+            <div class="rating_caption" tabindex="0">
               <input
                 class="rating_radio"
                 type="radio"
@@ -390,7 +424,7 @@
                 value="1"
                 aria-label="Очень плохо"
               />
-              <label for="star-1" class="rating_star"></label>
+              <label for="star-1" class="rating_star" tabindex="0"></label>
               <input
                 class="rating_radio"
                 type="radio"
@@ -398,8 +432,9 @@
                 name="rating"
                 value="2"
                 aria-label="Бывало и лучше"
+                tabindex="0"
               />
-              <label for="star-2" class="rating_star"></label>
+              <label for="star-2" class="rating_star" tabindex="0"></label>
               <input
                 class="rating_radio"
                 type="radio"
@@ -407,8 +442,9 @@
                 name="rating"
                 value="3"
                 aria-label="Сойдёт"
+                tabindex="0"
               />
-              <label for="star-3" class="rating_star"></label>
+              <label for="star-3" class="rating_star" tabindex="0"></label>
               <input
                 class="rating_radio"
                 type="radio"
@@ -416,8 +452,9 @@
                 name="rating"
                 value="4"
                 aria-label="Неплохо"
+                tabindex="0"
               />
-              <label for="star-4" class="rating_star"></label>
+              <label for="star-4" class="rating_star" tabindex="0"></label>
               <input
                 class="rating_radio"
                 type="radio"
@@ -425,8 +462,9 @@
                 name="rating"
                 value="5"
                 aria-label="Отлично"
+                tabindex="0"
               />
-              <label for="star-5" class="rating_star"></label>
+              <label for="star-5" class="rating_star" tabindex="0"></label>
             </div>
           </div>
           <div class="footer__additional_info_container footer__menu_link">
