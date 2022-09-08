@@ -1,0 +1,32 @@
+.page_content_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.contact_us {
+  margin-bottom: 57px;
+}
+
+.contact_us_title {
+  word-spacing: 0.3em;
+}
+
+.contact_form {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-right: 120px;
+}
+
+.support_info > p {
+  margin-bottom: 20px;
+}
+
+.support_appeal {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #c29974;
+}

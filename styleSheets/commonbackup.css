@@ -3,7 +3,6 @@ body {
 }
 
 .page_container {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 1180px;
   margin-left: auto;
@@ -36,7 +35,6 @@ body {
 * {
   list-style-type: none;
   text-decoration: none;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -47,7 +45,6 @@ p {
 
 a {
   text-decoration: none;
-  color: black;
 }
 
 .button {
@@ -90,8 +87,6 @@ fieldset {
 /* Хлебные крошки*/
 .breadcrump {
   margin-top: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 50px;
 }
@@ -133,11 +128,7 @@ fieldset {
 
 .page_nav {
   margin-bottom: 58px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .page_back,
@@ -167,12 +158,8 @@ fieldset {
   opacity: 0.3;
 }
 .page_nav_list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  width: 234px;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
+  width: 244px;
   justify-content: space-between;
 }
 
@@ -182,10 +169,6 @@ fieldset {
   line-height: 20px;
   border: none;
   cursor: pointer;
-}
-
-.active_page {
-  color: #c29974;
 }
 
 /* Стилизация главного заголовка страниц */
@@ -200,27 +183,11 @@ fieldset {
 /* Стилизация header*/
 .header {
   padding: 50px 0 0 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-
-  -webkit-box-pack: justify;
-
-  -ms-flex-pack: justify;
 
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   width: 1180px;
-}
-.logo_link {
-  display: flex;
-  align-content: center;
-}
-.logo {
-  display: block;
-  margin-top: auto;
 }
 .header_wrapper {
   position: fixed;
@@ -234,8 +201,6 @@ fieldset {
 }
 .nav__list {
   margin-left: 58px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   min-width: 240px;
 }
@@ -253,7 +218,7 @@ fieldset {
   cursor: pointer;
 }
 .contact_us_link {
-  margin-left: 19px;
+  margin-left: 20px;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
@@ -261,7 +226,6 @@ fieldset {
   font-weight: 700;
   font-size: 14px;
   line-height: 19px;
-  word-spacing: 0.3em;
 }
 
 .logo:hover,
@@ -294,14 +258,8 @@ fieldset {
 }
 .footer__menu,
 .footer__additional_info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 20px;
-  -moz-column-gap: 20px;
   column-gap: 20px;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 .footer__menu_section,
@@ -314,7 +272,7 @@ fieldset {
   font-weight: inherit;
   padding-bottom: 17px;
   border-bottom: 1px #666666 solid;
-  margin-bottom: 21px;
+  margin-bottom: 19px;
   margin-top: 0;
 }
 
@@ -342,8 +300,6 @@ fieldset {
 .footer__connect {
 }
 .footer__subscribe {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .subscribe_email {
@@ -351,9 +307,7 @@ fieldset {
   padding-left: 15px;
   background-color: #666666;
   color: white;
-  border: none;
 }
-
 .subscribe_email::-webkit-input-placeholder {
   color: white;
 }
@@ -361,20 +315,15 @@ fieldset {
   color: white;
 }
 
-.subscribe_email:hover,
-.subscribe_email:active,
-.subscribe_email:focus {
-  border: 1px solid #fffdfd;
-  border-radius: 1px;
-  outline: none;
+.subscribe_email:hover {
+  border: 2px solid #fffdfd;
+  border-radius: 2px;
 }
 .subscribe_button {
 }
 .social_lincs {
 }
 .social_links_list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .social_links_item {
@@ -417,102 +366,53 @@ fieldset {
 }
 
 .footer__additional_info_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 /* Звездный рейтинг */
 
-.footer__additional_info_container {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.rating {
+}
+.rating_text {
+  margin-right: 25px;
+}
+.rating_caption {
   display: flex;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  -webkit-column-gap: 3px;
-  -moz-column-gap: 3px;
+  flex-direction: row-reverse;
   column-gap: 3px;
 }
 
-.rating__group {
-  margin-left: 24px;
-  position: relative;
-  width: 93px;
-  height: 13px;
-  background: url("/static/icons/star.svg"), url("/static/icons/star.svg") 20px,
-    url("/static/icons/star.svg") 40px, url("/static/icons/star.svg") 60px,
-    url("/static/icons/star.svg") 80px;
-  background-size: 13px auto;
-  background-repeat: no-repeat;
+.rating_radio {
+  display: none;
 }
 
 .rating_star {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
-
-  height: 13px;
-  background-size: 13px;
+  cursor: pointer;
+}
+.rating_star::before {
+  content: "";
+  display: block;
+  width: 17px;
+  height: 17px;
+  background-image: url("../static/icons/star.svg");
+  background-position: center;
   background-repeat: no-repeat;
 }
-.rating_star:focus {
-  outline: none;
-}
-.rating_star:checked {
-  background: url("/static/icons/starChecked.svg"),
-    url("/static/icons/starChecked.svg") 20px,
-    url("/static/icons/starChecked.svg") 40px,
-    url("/static/icons/starChecked.svg") 60px,
-    url("/static/icons/starChecked.svg") 80px;
-  background-repeat: no-repeat;
-}
-.rating_star:hover {
-  background: url("/static/icons/starHover.svg"),
-    url("/static/icons/starHover.svg") 20px,
-    url("/static/icons/starHover.svg") 40px,
-    url("/static/icons/starHover.svg") 60px,
-    url("/static/icons/starHover.svg") 80px;
-  background-repeat: no-repeat;
-}
-.rating_star:hover ~ .rating_star {
-  background: url("/static/icons/star.svg"), url("/static/icons/star.svg") 20px,
-    url("/static/icons/star.svg") 40px, url("/static/icons/star.svg") 60px,
-    url("/static/icons/star.svg") 80px;
-  background-repeat: no-repeat;
+.rating_star:hover::before {
+  background-image: url("../static/icons/starHover.svg");
 }
 
-.rating_star:nth-of-type(1) {
-  width: 13px;
-  z-index: 5;
-}
-.rating_star:nth-of-type(2) {
-  width: 33px;
-  z-index: 4;
-}
-.rating_star:nth-of-type(3) {
-  width: 53px;
-  z-index: 3;
-}
-.rating_star:nth-of-type(4) {
-  width: 73px;
-  z-index: 2;
-}
-.rating_star:nth-of-type(5) {
-  width: 93px;
-  z-index: 1;
+.rating_star:hover ~ .rating_star:before {
+  background-image: url("../static/icons/starHover.svg");
 }
 
-.footer__additional_info_container:hover .rating_caption,
-.footer__additional_info_container:focus-within .rating_caption {
+.rating_radio:checked + .rating_star:before,
+.rating_radio:checked ~ .rating_star:before {
+  background-image: url("../static/icons/starChecked.svg");
+}
+
+.footer__additional_info_container:hover .rating_text {
   color: #c29974;
 }
 .developer_link {
@@ -536,11 +436,7 @@ fieldset {
 }
 .category__list {
   margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 20px;
-  -moz-column-gap: 20px;
   column-gap: 20px;
 }
 .category__list_item {
@@ -549,25 +445,6 @@ fieldset {
   height: 270px;
   position: relative;
 }
-.category__list_item:nth-child(1) {
-  background-color: #a4e1a4;
-}
-.category__list_item:nth-child(2) {
-  background-color: #e8bc9a;
-}
-.category__list_item:nth-child(3) {
-  background-color: #f5dc79;
-}
-.category__list_item:nth-child(4) {
-  background-color: #ada8e0;
-}
-.category__list_item:nth-child(5) {
-  background-color: #f599b6;
-}
-.category__list_item:nth-child(6) {
-  background-color: #adc0f6;
-}
-
 .category_img {
   width: 100%;
 }
@@ -587,17 +464,9 @@ fieldset {
   width: 70%;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   text-align: center;
 }
@@ -612,7 +481,6 @@ fieldset {
   width: 680px;
 
   background-color: #e5eaf8;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 42px 40px;
   font-size: 14px;
@@ -630,11 +498,7 @@ fieldset {
 
 .contact_form__phone_email_container {
   margin-top: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 20px;
-  -moz-column-gap: 20px;
   column-gap: 20px;
 }
 
@@ -652,10 +516,8 @@ fieldset {
 }
 
 .contact_form__checkbox_container {
-  margin-top: 19px;
+  margin-top: 23px;
   margin-bottom: 17px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
