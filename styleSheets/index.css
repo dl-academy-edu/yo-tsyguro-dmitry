@@ -1,5 +1,5 @@
 .main {
-  margin-top: 231px;
+  margin-top: 230px;
 }
 
 /* Стили баннера */
@@ -8,6 +8,8 @@
 }
 
 .banner__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #eee4db;
   padding: 17px 30px;
@@ -72,7 +74,7 @@
   text-transform: uppercase;
   line-height: 110%;
   margin: 0;
-  padding-top: 10px;
+  padding-top: 8px;
 }
 
 .banner__design_info {
@@ -102,6 +104,8 @@
 /* Стили категорий */
 
 .category__scroll {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 30px;
   max-width: 680px;
@@ -109,6 +113,7 @@
 .category__btn_left,
 .category__btn_right {
   display: block;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 37px;
   height: 37px;
@@ -134,6 +139,8 @@
 }
 .service {
   margin-top: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .service__picture {
@@ -158,6 +165,10 @@
 .service__list_item {
 }
 
+.category__list_item:nth-child(n + 5) {
+  display: none;
+}
+
 /* Стилизация кнопок сервисов*/
 .service__button {
   font-weight: 400;
@@ -167,6 +178,7 @@
   height: 55px;
   text-align: start;
   border-width: 0;
+  padding: 0;
   background-color: white;
   position: relative;
 }
@@ -192,7 +204,7 @@
 
 .service_text {
   margin-top: 20px;
-  margin-bottom: 28px;
+  margin-bottom: 25px;
 }
 
 .service_text > p:nth-child(2) {
@@ -211,9 +223,16 @@
 }
 .partners__list {
   margin-top: 88px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 .partners__list_item {
@@ -223,33 +242,43 @@
 /* Стилизация секции с дополнительной информацией и картой*/
 
 .additional_services {
-  margin-top: 84px;
-  margin-bottom: 45px;
+  margin: 111px 37px 156px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-column-gap: 57px;
+  -moz-column-gap: 57px;
   column-gap: 57px;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 .additional_service {
-  padding: 0 30px 0 30px;
-  position: relative;
+  padding: 0 30px 27px 30px;
+  width: calc((100%-57px) / 2);
+  background: #e1f0f7;
 }
-.additional_service::before {
+/* .additional_service::before {
   content: "";
   display: block;
   left: 0;
   top: 26px;
   width: 100%;
-  height: 100%;
+  height: 63%;
   background: #e1f0f7;
   position: absolute;
   z-index: -1;
-}
+} */
+
 .additional_service__title {
+  margin-top: -27px;
   margin-bottom: 10px;
   text-transform: uppercase;
   font-size: 38px;
   line-height: 46px;
 }
 .additional_service__notice {
+  margin-top: 15px;
   font-weight: 400;
   font-size: 26px;
   line-height: 34px;
@@ -263,12 +292,12 @@
   margin-top: 20px;
 }
 .contacts {
-  padding: 12px 65px 0 30px;
-  height: 100%;
-  position: relative;
+  width: calc((100%-57px) / 2);
+  padding: 0px 30px 0 30px;
+  background: #e1f0f7;
 }
 
-.contacts::before {
+/* .contacts::before {
   content: "";
   left: 0;
   top: 26px;
@@ -277,18 +306,15 @@
   background: #e1f0f7;
   position: absolute;
   z-index: -1;
-}
+} */
 
-.contacts__title {
-  margin-bottom: 33px;
-  font-size: 38px;
-  text-transform: uppercase;
-}
 .contacts__text {
+  margin-top: 20px;
 }
 
 .map {
   margin-top: 30px;
+  margin-bottom: -133px;
   width: 100%;
 }
 
@@ -296,7 +322,11 @@
 .popup_container {
   position: fixed;
   display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   top: 0;
   bottom: 0;
@@ -307,6 +337,8 @@
 }
 
 .contact_form_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -333,5 +365,7 @@
 }
 
 .open_popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }

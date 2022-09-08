@@ -1,10 +1,12 @@
 .page_content_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 50px;
 }
 
 .contact_us {
-  margin-bottom: 54px;
+  margin-bottom: 57px;
 }
 
 .contact_us_title {
@@ -12,6 +14,7 @@
 }
 
 .contact_form {
+  -ms-flex-negative: 0;
   flex-shrink: 0;
   margin-right: 120px;
 }

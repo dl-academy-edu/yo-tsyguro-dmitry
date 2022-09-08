@@ -4,7 +4,7 @@
     <meta charset="UTF_8" />
     <meta http_equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styleSheets/commonMini.css" />
+    <link rel="stylesheet" href="./styleSheets/commonbackup.css" />
     <link rel="stylesheet" href="./styleSheets/indexMini.css" />
     <link rel="stylesheet" href="/styleSheets/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,11 +15,11 @@
     />
     <title>DLK</title>
   </head>
-  <body class="font_content">    
-    <div class="header_wrapper">
-      <div class="page_container">
+  <body class="font_content">
+    <div class="page_container">
+      <div class="header_wrapper">
         <header class="header">
-          <a href="/index.html" class="logo_link">
+          <a href="/index.html">
             <svg
               width="102"
               height="52"
@@ -74,10 +74,8 @@
             >Contact us</a
           >
         </header>
-      </div>  
       </div>
       <main class="main">
-        <div class="page_container">
         <section class="banner">
           <div class="banner__container">
             <div class="banner__changer">
@@ -121,7 +119,7 @@
                   alt="Apparel kids image"
                   class="category_img"
                 />
-                <div class="category__name font_title" tabindex="0">
+                <div class="category__name font_title">
                   <p>Apparel kids</p>
                 </div>
               </a>
@@ -133,7 +131,7 @@
                   alt="Holiday shop image"
                   class="category_img"
                 />
-                <div class="category__name font_title" tabindex="0">
+                <div class="category__name font_title">
                   <p>Holiday shop</p>
                 </div>
               </a>
@@ -145,7 +143,7 @@
                   alt="Toys image"
                   class="category_img"
                 />
-                <div class="category__name font_title" tabindex="0">
+                <div class="category__name font_title">
                   <p>Toys</p>
                 </div>
               </a>
@@ -157,32 +155,8 @@
                   alt="Accessories image"
                   class="category_img"
                 />
-                <div class="category__name font_title" tabindex="0">
+                <div class="category__name font_title">
                   <p>Accessories</p>
-                </div>
-              </a>
-            </li>
-            <li class="category__list_item">
-              <a href="./toys.html" class="category__item_link">
-                <img
-                  src="../static/images/sale.jpg"
-                  alt="Sale image"
-                  class="category_img"
-                />
-                <div class="category__name font_title" tabindex="0">
-                  <p>Sale</p>
-                </div>
-              </a>
-            </li>
-            <li class="category__list_item">
-              <a href="./toys.html" class="category__item_link">
-                <img
-                  src="../static/images/apparelAdults.jpg"
-                  alt="Apparel adults image"
-                  class="category_img"
-                />
-                <div class="category__name font_title" tabindex="0">
-                  <p>Apparel adults</p>
                 </div>
               </a>
             </li>
@@ -272,20 +246,17 @@
               Some days i feel like i've been working on dlk my entire life and
               there are other days that i am completely shocked that four years
               have flown by. It's simply magical.
-          
-           
-              
             </div>
             <a href="./pages/toys.html" class="button buy_now_button"
               >Buy now</a
             >
           </section>
           <section class="contacts">
-            <h2 class="additional_service__title font_title">Contacts</h2>
+            <h2 class="contacts__title font_title">Contacts</h2>
             <p class="text contacts__text">
               Some days i feel like i've been working on dlk my entire life and
               there are other days that i am completely shocked that four years
-              have flown by. It's simply magical.            
+              have flown by. It's simply magical.
             </p>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2372.550878921675!2d49.28804361598429!3d53.51221786997467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416879ed1ada6fbd%3A0x751234490b1ca980!2sDirect%20Line%20Digital!5e0!3m2!1sru!2sru!4v1661322303423!5m2!1sru!2sru"
@@ -394,13 +365,11 @@
           </div>
         </nav>
         <div class="footer__additional_info">
-          <fieldset class="footer__additional_info_container">
-            <span class="rating_caption footer__menu_link">
-              Company Rating
-            </span>
-            <div class="rating__group">
+          <div class="footer__additional_info_container">
+            <span class="rating_text footer__menu_link">Company Rating</span>
+            <div class="rating_caption" tabindex="0">
               <input
-                class="rating_star"
+                class="rating_radio"
                 type="radio"
                 id="star-1"
                 name="rating"
@@ -408,8 +377,9 @@
                 aria-label="Очень плохо"
                 tabindex="0"
               />
+              <label for="star-1" class="rating_star" tabindex="0"></label>
               <input
-                class="rating_star"
+                class="rating_radio"
                 type="radio"
                 id="star-2"
                 name="rating"
@@ -417,35 +387,39 @@
                 aria-label="Бывало и лучше"
                 tabindex="0"
               />
+              <label for="star-2" class="rating_star" tabindex="0"></label>
               <input
-                class="rating_star"
+                class="rating_radio"
                 type="radio"
                 id="star-3"
                 name="rating"
-                value="1"
+                value="3"
                 aria-label="Сойдёт"
                 tabindex="0"
               />
+              <label for="star-3" class="rating_star" tabindex="0"></label>
               <input
-                class="rating_star"
+                class="rating_radio"
                 type="radio"
                 id="star-4"
                 name="rating"
-                value="2"
-                aria-label="Ну нормально"
+                value="4"
+                aria-label="Неплохо"
                 tabindex="0"
               />
+              <label for="star-4" class="rating_star" tabindex="0"></label>
               <input
-                class="rating_star"
+                class="rating_radio"
                 type="radio"
                 id="star-5"
                 name="rating"
-                value="2"
-                aria-label="Превосходно"
+                value="5"
+                aria-label="Отлично"
                 tabindex="0"
               />
+              <label for="star-5" class="rating_star" tabindex="0"></label>
             </div>
-          </fieldset>
+          </div>
           <div class="footer__additional_info_container footer__menu_link">
             <p>Copyright © 2018 Dlk • Design Life Kids</p>
           </div>

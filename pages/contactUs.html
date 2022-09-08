@@ -16,9 +16,9 @@
     <title>DLK</title>
   </head>
   <body class="font_content">
-    <div class="page_container">
-      <div class="header_wrapper">
-        <header class="header">
+    <div class="header_wrapper">
+        <div class="page_container">
+          <header class="header">
           <a href="/index.html">
             <svg
               width="102"
@@ -71,9 +71,11 @@
             />
           </svg>
           <a href="./contactUs.html" class="contact_us_link">Contact us</a>
-        </header>
+          </header>
+        </div>  
       </div>
       <main class="main">
+        <div class="page_container">
         <section class="contact_us">
           <h1 class="main__title font_title contact_us_title">Contact us</h1>
           <ul class="breadcrump font_decor">
@@ -160,6 +162,7 @@
             </div>
           </div>
         </section>
+      </div>
       </main>
     </div>
     <footer class="footer">
@@ -172,7 +175,7 @@
                 <a href="#" class="footer__menu_link">About us</a>
               </li>
               <li class="footer__navigation_list_item">
-                <a href="./blog.html" class="footer__menu_link">Blog</a>
+                <a href="./pages/blog.html" class="footer__menu_link">Blog</a>
               </li>
               <li class="footer__navigation_list_item">
                 <a href="#" class="footer__menu_link">Design Services</a>
@@ -181,7 +184,7 @@
                 <a href="#" class="footer__menu_link">Featured On</a>
               </li>
               <li class="footer__navigation_list_item">
-                <a href="/pages/toys.html" class="footer__menu_link"
+                <a href="/pages/blog.html" class="footer__menu_link"
                   >2018 Holiday Catalog</a
                 >
               </li>
@@ -194,7 +197,7 @@
             <h2 class="footer__title">Custumer Information</h2>
             <ul class="footer__custumer_info_list">
               <li class="footer__custumer_info_list_item">
-                <a href="./contactUs.html" class="footer__menu_link"
+                <a href="./pages/contactUs.html" class="footer__menu_link"
                   >Contact Us</a
                 >
               </li>
@@ -255,20 +258,22 @@
           </div>
         </nav>
         <div class="footer__additional_info">
-          <div class="footer__additional_info_container">
-            <span class="rating_text footer__menu_link">Company Rating</span>
-            <div class="rating_caption" tabindex="0">
+          <fieldset class="footer__additional_info_container">
+            <span class="rating_caption footer__menu_link">
+              Company Rating
+            </span>
+            <div class="rating__group">
               <input
-                class="rating_radio"
+                class="rating_star"
                 type="radio"
                 id="star-1"
                 name="rating"
                 value="1"
                 aria-label="Очень плохо"
+                tabindex="0"
               />
-              <label for="star-1" class="rating_star" tabindex="0"></label>
               <input
-                class="rating_radio"
+                class="rating_star"
                 type="radio"
                 id="star-2"
                 name="rating"
@@ -276,39 +281,35 @@
                 aria-label="Бывало и лучше"
                 tabindex="0"
               />
-              <label for="star-2" class="rating_star" tabindex="0"></label>
               <input
-                class="rating_radio"
+                class="rating_star"
                 type="radio"
                 id="star-3"
                 name="rating"
-                value="3"
+                value="1"
                 aria-label="Сойдёт"
                 tabindex="0"
               />
-              <label for="star-3" class="rating_star" tabindex="0"></label>
               <input
-                class="rating_radio"
+                class="rating_star"
                 type="radio"
                 id="star-4"
                 name="rating"
-                value="4"
-                aria-label="Неплохо"
+                value="2"
+                aria-label="Ну нормально"
                 tabindex="0"
               />
-              <label for="star-4" class="rating_star" tabindex="0"></label>
               <input
-                class="rating_radio"
+                class="rating_star"
                 type="radio"
                 id="star-5"
                 name="rating"
-                value="5"
-                aria-label="Отлично"
+                value="2"
+                aria-label="Превосходно"
                 tabindex="0"
               />
-              <label for="star-5" class="rating_star" tabindex="0"></label>
             </div>
-          </div>
+          </fieldset>
           <div class="footer__additional_info_container footer__menu_link">
             <p>Copyright © 2018 Dlk • Design Life Kids</p>
           </div>
