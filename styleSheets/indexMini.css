@@ -209,7 +209,7 @@
 }
 .additional_service {
   padding: 0 30px 27px;
-  width: calc((100%-57px) / 2);
+  width: calc((100% - 57px) / 2);
   background: #e1f0f7;
 }
 .additional_service__title {
@@ -234,7 +234,7 @@
   margin-top: 20px;
 }
 .contacts {
-  width: calc((100%-57px) / 2);
+  width: calc((100% - 57px) / 2);
   padding: 0 30px;
   background: #e1f0f7;
 }
